@@ -1,0 +1,22 @@
+Short:    GlowIcon Sytled images with gradients for SAMBA's SWAT
+Uploader: abattoir@optonline.net <Christopher Kossa>
+Author:   abattoir@optonline.net <Christopher Kossa>
+Type:     comm/net
+Requires: Samba
+Version:  1.0a
+
+This is a set of images that are used with AmigaSAMBA.  They all use
+GlowIcons for images and have a nice GlowIcons styled gradient
+background instead of the plain bland images that come with Samba.
+
+Installation:  Copy all the files that are in the GlowSWAT drawer to
+               SAMAB:swat/images.
+
+History:
+1.0a : FIXED - Global and Home did not appear right with some browsers
+       (Reported: Alexander Perez)
+
+--
+Christopher Kossa
+abattoir@optonline.net
+http://www.AmigaAbattoir.com:8080

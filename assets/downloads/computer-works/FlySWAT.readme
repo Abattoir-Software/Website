@@ -1,0 +1,31 @@
+Short:    GlowIcon Sytled images with gradients for SAMBA's SWAT
+Uploader: abattoir@optonline.net <Christopher Kossa>
+Author:   abattoir@optonline.net <Christopher Kossa>
+Type:     comm/net
+Requires: Samba
+Version:  1.0a
+
+This is a set of images that are to be used with the SWAT utility for SAMBA.  
+These are original images created to add a colorful spice to SWAT.
+
+(If used for Amiga, you might want to use  a screen mode with at least 64 or more colors)
+
+For non Amiga users, the .info file can be deleted
+
+Installation:  Copy all the files that are in the FlySWAT drawer to SAMAB:swat/images.
+
+Any questions or comments, please feel free to drop me a message!
+
+History:
+V1.0a:    Just updated my e-mail and web site
+
+V1.0:     Well, no complaints, so hope everyone likes them.
+
+Preview:  Just to see what the AmigaSamba Team thinks of these.
+
+--
+Christopher Kossa
+abattoir@optonline.net
+AIM: AmigaAbattoir
+http://www.AmigaAbattoir.com:8080/
+

@@ -1,0 +1,17 @@
+body, h1, h2, h3, h4, h5, h6 { font-family: "eurostile", sans-serif; }
+h1 { font-family: "eurostile-extended", sans-serif; }
+.caption { font-family: "eurostile-condensed", sans-serif; }
+body { padding-bottom: 55px; padding-top: 35px; }
+.itemIcon { border-radius: 10px 5px; border: 2px solid #701221; }
+a img:hover {
+	-webkit-filter: grayscale(100%) sepia(1) hue-rotate(305deg) saturate(5);
+	filter: grayscale(100%) sepia(1) hue-rotate(305deg) saturate(5);
+}
+.resumeArea { background-color: #FFFFFF; color: #000000; padding: 15px; margin: 5px; font-family: "franklin-gothic-urw", sans-serif; }
+.resumeArea h1, .resumeArea h2, .resumeArea h3, .resumeArea h4, .resumeArea h5, .resumeArea h6 { font-family: "franklin-gothic-urw", sans-serif; text-shadow: none;}
+.resumeArea a { color: #880000; }
+ul.runningList { margin: 0; padding: 0; display: initial; }
+ul.runningList li { margin: 0; padding: 0 0.25em 0 0; }
+ul.runningList li:after { content: ", "; }
+ul.runningList li:last-child:before { content: " and "; }
+ul.runningList li:last-child:after { content: ""; }
