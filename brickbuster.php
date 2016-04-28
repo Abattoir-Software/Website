@@ -7,7 +7,7 @@ head_content("BrickBuster",'<span class="badge">Preview</span> Flash breakout qu
 			None of the game uses animations or art work created in Flash. All of it is done through code with the help of some textures and some ActionScript 3 filter effects. The levels are generated
 			from information stored in an XML file. So, after about two weeks of tinkering aroud with AS3 and FlexBuilder, this is what I came up with. There are definately
 			some bugs and a lot of work needed, but this is just an early preview of the game. The graphics were secondary to getting some the main systems working, so only level 2 on this preview shows how
-			the backgrounds should be more than just a bland wall and make it feel like you are playing in something other than a box. In level 4, what out for falling rocks.
+			the backgrounds should be more than just a bland wall and make it feel like you are playing in something other than a box. In level 4, watch out for falling rocks.
 			</p>
 			<div align="center">
 <?php flash_content("BrickBuster", "assets/brickbuster/BrickBuster.swf");?>
