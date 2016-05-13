@@ -15,3 +15,4 @@ ul.runningList li { margin: 0; padding: 0 0.25em 0 0; }
 ul.runningList li:after { content: ", "; }
 ul.runningList li:last-child:before { content: " and "; }
 ul.runningList li:last-child:after { content: ""; }
+.flashAlt { text-align: left; }

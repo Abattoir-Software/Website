@@ -6,7 +6,7 @@ write_media("Bioreactor Defender", "An old school shooter Flash game.", "bioreac
 write_media("BrickBuster", "A break out type game, made with Flash.", "brickbuster.php", "assets/images/computer-works/brickbuster_icon.jpg", true);
 ?>
 <hr/>
-<?
+<?php
 write_media("BlankWords", "A Java based word game to keep you guessing.", "blankwords.php", "assets/images/computer-works/blankwords_icon.jpg",true);
 write_media("Galaxy Arena Earth", "A 3D brawller, that takes place in a futuristic Earth which has become the battle ground for aliens to settle their disputes", "galaxy-arena-earth.php", "assets/images/computer-works/galaxy-arena-earth_icon.jpg",true);
 write_media("Escape to New York", "A quick little point-and-click Flash adventure game, done for a final assignment of a class.", "escape-to-new-york.php", "assets/images/computer-works/escape-to-new-york_icon.jpg",true);

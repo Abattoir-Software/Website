@@ -10,7 +10,16 @@ head_content("BrickBuster",'<span class="badge">Preview</span> Flash breakout qu
 			the backgrounds should be more than just a bland wall and make it feel like you are playing in something other than a box. In level 4, watch out for falling rocks.
 			</p>
 			<div align="center">
-<?php flash_content("BrickBuster", "assets/brickbuster/BrickBuster.swf");?>
+<?php
+$brickbusterCarousel = array (
+		new CarouselInfo("assets/images/brickbuster/brickbuster_shot1.jpg", "Bounce through sides of the screen"),
+		new CarouselInfo("assets/images/brickbuster/brickbuster_shot2.jpg", "Stay away from the black hole!"),
+		new CarouselInfo("assets/images/brickbuster/brickbuster_shot3.jpg", "Falling rocks remove bricks for you"),
+);
+
+flash_content("BrickBuster", "assets/brickbuster/BrickBuster.swf", 640, 480, true, false, "window",
+		'To play the game, you need to visit this page with Flash enabled. In the meantime, here are some screenshots:', $brickbusterCarousel );
+?>
 			</div>
             <h4>Controls</h4>
             <ul class="list-unstyled">

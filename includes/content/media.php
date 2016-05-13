@@ -1,4 +1,14 @@
 <?php
+class CarouselInfo {
+	public $image;
+	public $caption;
+
+	function __construct($image, $caption) {
+		$this->image = $image;
+		$this->caption = $caption;
+	}
+}
+
 function write_media($title, $descript, $link, $image, $useBorder = false, $moveImage = false) { ?>
 				<div class="media">
 <?php if($moveImage) { ?>
@@ -55,11 +65,12 @@ function start_content($heading, $blurb = "") {
 <?php
 }
 
-function end_content() { ?>
+function end_content($additionalContent = "") { ?>
 			</div>
 		</div>
 	</div>
 <?php include_once 'includes/content/footer.php'; ?>
+<?php if($additionalContent!=="") { echo $additionalContent; } ?>
 </body>
 </html>
 <?php
@@ -131,10 +142,18 @@ function images_captioned($image, $imageAlt, $caption, $image2, $imageAlt2, $cap
 <?php
 }
 
-function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=true, $fullScreenInteractive=false, $wmode="window") { ?>
+function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=true, $fullScreenInteractive=false, $wmode="window", $flashAltText="Sorry, this content requires Flash", $carouselData=NULL) { ?>
 			<div align="center">
 				<div id="flash_content">
-					<h4>Sorry, this page requires Flash</h4>
+<?php
+	if($carouselData!=null) {
+		makeFlashCarousel($flashAltText, $carouselData, $title);
+	} else {
+?>
+					<h4><?=$flashAltText?></h4>
+<?php
+	}
+?>
 				</div>
 			</div>
 			<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
@@ -154,4 +173,42 @@ function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=tr
 			</script>
 <?php
 }
+
+function makeFlashCarousel($flashAltText,$data,$id="generic") {
 ?>
+	<div class="flashAlt"><?=$flashAltText?></div>
+	<div id="carousel-<?=$id?>" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+<?php
+	for($i = 0; $i<count($data);$i++) {
+		echo "\t\t\t" . '<li data-target="#carousel-' . $id . '" data-slide-to="' . $i . '"';
+		if($i==0) {
+			echo ' class="active';
+		}
+		echo '"></li>' . "\n";
+	}
+?>
+		</ol>
+		<div class="carousel-inner">
+<?php
+	$count = 0;
+	foreach($data as $item) {?>
+			<div class="item<?php if($count==0) { echo " active"; $count++; } ?>">
+				<img src="<?=$item->image?>" alt="...">
+				<div class="carousel-caption">
+					<h3><?=$item->caption?></h3>
+				</div>
+			</div>
+<?php } ?>
+		</div>
+		<a class="left carousel-control" href="#carousel-<?=$id?>" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel-<?=$id?>" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
+<?php
+}
+
+

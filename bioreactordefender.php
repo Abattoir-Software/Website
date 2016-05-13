@@ -5,7 +5,17 @@ head_content("Bioreactor Defender","Flash Game");
 			<p>This is a game that was developed for Kenyon Hoag Life Science. The game lived inside the website, which was another Flash piece. You control the Biodefender, a microscopic ship inside a <a href="http://en.wikipedia.org/wiki/Bioreactor" target="_blank"><i class="glyphicon glyphicon-new-window"></i> bioreactor</a>. The goal is to protect the growing <a href="http://en.wikipedia.org/wiki/Hybridoma_technology" target="_blank"><i class="glyphicon glyphicon-new-window"></i>hybridoma</a> in the center of the screen from invaiding bacteria.
 			To arm your Biodefender, you have to touch a bacteria in order to produce an antibody that can destroy that particular bacteria.
 			The level is complete once the hybridoma secretes antibodies.</p>
-<?php flash_content("BioreactorDefender", "assets/bioreactordefender/BioreactorDefender.swf", 704, 570);?>
+<?php
+$bioreactorCarousel = array (
+		new CarouselInfo("assets/images/bioreactordefender/bioreactordefender_shot1.jpg", "Title screen"),
+		new CarouselInfo("assets/images/bioreactordefender/bioreactordefender_shot2.jpg", "Protect the hybridoma!"),
+		new CarouselInfo("assets/images/bioreactordefender/bioreactordefender_shot3.jpg", "Don't let bactieria touch it"),
+		new CarouselInfo("assets/images/bioreactordefender/bioreactordefender_shot4.jpg", "Rack up bonuses for skill shots")
+);
+
+flash_content("BioreactorDefender", "assets/bioreactordefender/BioreactorDefender.swf", 704, 570, false, true, "direct",
+		'To play the game, you need to visit this page with Flash enabled. In the meantime, here are some screenshots:', $bioreactorCarousel);
+?>
 			<h4>Controls</h4>
 			<ul class="list-unstyled">
 				<li><kbd>Up Arrow</kbd> Moves biodefender forward.</li>
