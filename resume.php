@@ -1,6 +1,35 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("Resume","");
+
+class Skills {
+	public $title;
+	public $skills;
+
+	function __construct($title, array $skills) {
+		$this->title = $title;
+		$this->skills = $skills;
+	}
+}
+
+class WorkExperience {
+	public $company;
+	public $location;
+	public $dates;
+	public $title;
+	public $description;
+	public $bullets;
+	public $projects = "";
+
+	function __construct($company, $location, $dates, $title, $description, array $bullets, $projects = "") {
+		$this->company = $company;
+		$this->location = $location;
+		$this->dates = $dates;
+		$this->title = $title;
+		$this->description = $description;
+		$this->bullets = $bullets;
+		$this->projects = $projects;
+	}
+}
 
 function doEntry($name,$type,$location,$dates,$descrip) {
 ?>
@@ -56,6 +85,8 @@ echo '<ul class="list-inline runningList">';
 	}
 echo '</ul></br>';
 }
+
+head_content("Resume","");
 ?>
 <div class="resumeArea container-fluid">
 	<div class="row">
@@ -86,16 +117,6 @@ echo '</ul></br>';
 	<p>Programmer with a specialty in digital, as well as traditional art, skilled in developing games or products to increase efficiencies. Thrive on learning how things work, how to make better, and how to educate or inform others. Experienced with various types of programming languages and software for art, 3D modeling, video editing, and office software, as well as several operating systems. Enjoy new challenges to enhance skill set.</p>
 	<h3>Skills</h3>
 <?php
-class Skills {
-	public $title;
-	public $skills;
-
-	function __construct($title, array $skills) {
-		$this->title = $title;
-		$this->skills = $skills;
-	}
-}
-
 $skillItems = array (
 	new Skills("Programming", array("ActionScript 3","Flex","C#","PHP","Javascript","Java","Python","C/C++")),
 	new Skills("Development Software", array("<i>Eclipse</i>", "<i>MonoDevelop</i>", "<i>Visual Studio</i>", "<i>XCode</i>", "<i>GitHub</i>", "<i>Jira</i>", "<i>Trac</i>", "<i>Git</i>", "<i>SVN</i>")),
@@ -108,26 +129,6 @@ foreach ($skillItems as $skill) {
 ?>
 	<h3>Work Experience</h3>
 <?php
-class WorkExperience {
-	public $company;
-	public $location;
-	public $dates;
-	public $title;
-	public $description;
-	public $bullets;
-	public $projects = "";
-
-	function __construct($company, $location, $dates, $title, $description, array $bullets, $projects = "") {
-		$this->company = $company;
-		$this->location = $location;
-		$this->dates = $dates;
-		$this->title = $title;
-		$this->description = $description;
-		$this->bullets = $bullets;
-		$this->projects = $projects;
-	}
-}
-
 $workExperienceItems = array(
 	new WorkExperience("BLOOMFIELD COLLEGE","Bloomfield, NJ","2009 – Present","Adjunct Professor","Teach various classes for game programming ranging from Unity, XNA/C# and to ActionScript 3 for Flex, Flash and AIR to adapt to current languages and tools.",
 		array(
