@@ -130,6 +130,13 @@ foreach ($skillItems as $skill) {
 	<h3>Work Experience</h3>
 <?php
 $workExperienceItems = array(
+	new WorkExperience("PROPELLER COMMUNICATIONS","Summit, NJ","2016 – Present","Senior Front End Developer","Oversaw front end of web site development for various clients.",
+		array(
+			"Maintenance of various programming projects across varied technologies.",
+			"Developed client websites based on designers vision for web and mobile devices."
+		)
+	),
+
 	new WorkExperience("BLOOMFIELD COLLEGE","Bloomfield, NJ","2009 – Present","Adjunct Professor","Teach various classes for game programming ranging from Unity, XNA/C# and to ActionScript 3 for Flex, Flash and AIR to adapt to current languages and tools.",
 		array(
 			"Led 2 different levels of a classes where student groups created games to facilitate teamwork." ,
@@ -141,7 +148,7 @@ $workExperienceItems = array(
 		array(
 			"Performed modification of Flash UIs, allowing communication with other SWFs through Flash Builder.",
 			"Developed PHP scripts, bridging communications between Flex interfaces and MySQL databases for client websites.",
-			"Developed software using Flex, enabling common code base to be used via web, desktop or Android with AIR."
+			"Developed software using Flex, enabling common code base for web, desktop and mobile."
 		)
 	),
 
@@ -194,13 +201,9 @@ $achievments = array(
 		<p class="text-muted">Page last update: <?php echo date("F d, Y"/* H:i"*/, getlastmod()); ?></p>
 	</div>
 	<div>
-<?php
-/*
 		<a class="pull-right" href="https://get.adobe.com/reader/"><img src="assets/images/layout/Get_Adobe_Acrobat_Reader_DC_web_button_158x39.fw.png"></a>
 		<a href="assets/downloads/resume/Resume-ChristopherPollati.pdf" target="_blank"><img src="assets/images/layout/icons/pdf.png"/> Christopher Pollati's Resume (PDF)</a>
-		<p class="text-muted">Last updated: <?php echo date("F d, Y"/* H:i"* /, filemtime("assets/downloads/resume/Resume-ChristopherPollati.pdf")); ?></p>
-*/
-?>
+		<p class="text-muted">Last updated: <?php echo date("F d, Y"/* H:i"*/, filemtime("assets/downloads/resume/Resume-ChristopherPollati.pdf")); ?></p>
 		<a href="assets/downloads/resume/Resume-ChristopherPollati.doc" target="_blank"><img src="assets/images/layout/icons/word.png"/> Christopher Pollati's Resume (Word Doc)</a>
 		<p class="text-muted">Last updated: <?php echo date("F d, Y"/* H:i"*/, filemtime("assets/downloads/resume/Resume-ChristopherPollati.doc")); ?></p>
 	</div>
