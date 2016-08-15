@@ -133,7 +133,8 @@ $workExperienceItems = array(
 	new WorkExperience("PROPELLER COMMUNICATIONS","Summit, NJ","2016 – Present","Senior Front End Developer","Oversaw front end of web site development for various clients.",
 		array(
 			"Maintenance of various programming projects across varied technologies.",
-			"Developed client websites based on designers vision for web and mobile devices."
+			"Developed client websites based on designers vision for web and mobile devices.",
+			"Modified and expanded a web baser game built with Phaser.io"
 		)
 	),
 
@@ -146,7 +147,7 @@ $workExperienceItems = array(
 
 	new WorkExperience("ABATTOIR SOFTWARE LLC","Clifton, NJ","2008 – Present","Owner / Programmer","Executed contract programming, working remotely to assist other companies on game projects.",
 		array(
-			"Performed modification of Flash UIs, allowing communication with other SWFs through Flash Builder.",
+			"Performed modification of Flash UIs, allowing communication with other SWFs.",
 			"Developed PHP scripts, bridging communications between Flex interfaces and MySQL databases for client websites.",
 			"Developed software using Flex, enabling common code base for web, desktop and mobile."
 		)
