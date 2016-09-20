@@ -132,9 +132,10 @@ foreach ($skillItems as $skill) {
 $workExperienceItems = array(
 	new WorkExperience("PROPELLER COMMUNICATIONS","Summit, NJ","2016 – Present","Senior Front End Developer","Oversaw front end of web site development for various clients.",
 		array(
-			"Maintenance of various programming projects across varied technologies.",
+			"Prototyped a VR walk-through using Unity for Samsung GearVR.",
 			"Developed client websites based on designers vision for web and mobile devices.",
-			"Modified and expanded a web baser game built with Phaser.io"
+			"Modified and expanded a web baser game built with Phaser.io",
+			"Maintenance of various programming projects across varied technologies."
 		)
 	),
 
