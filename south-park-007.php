@@ -1,6 +1,7 @@
-	<?php
+<?php
 include_once 'includes/content/media.php';
-head_content("South Park - 007", "MOD for Mantasoft's James Bond: You Only Live Twice");
+$pageTitle = "South Park - 007";
+head_content($pageTitle, "MOD for Mantasoft's James Bond: You Only Live Twice");
 ?>
 			<p>Hello Chil'ren!  How would you like to kill Kenny yourself!  This mod is for Mantasoft's <i>James Bond: You Only Live Twice</i> (Version 0.9 or better) where you are placed in a death match
 			where up to 4 players can ruun around, shoot and blow up each other. This mod changes the characters in the game to those from South Park. You can play as Stan, Kyle, Kenny, Cartman, Mr. Garrison or Chef.
@@ -54,4 +55,4 @@ head_content("South Park - 007", "MOD for Mantasoft's James Bond: You Only Live 
 					</tr>
 				</table>
 			</div>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

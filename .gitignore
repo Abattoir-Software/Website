@@ -1,1 +1,13 @@
 *.DS_Store
+/.buildpath
+/.settings/
+/.project
+/SVN/
+/denizens/
+/facebook*/
+/google*.html
+/portfolio/
+/recaptch*.php
+/sculpt/
+/stumpy/
+.htaccess

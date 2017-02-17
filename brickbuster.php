@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("BrickBuster",'<span class="badge">Preview</span> Flash breakout quest');
+$pageTitle = "BrickBuster";
+head_content($pageTitle,'<span class="badge">Preview</span> Flash breakout quest');
 ?>
 			<p>
 			This is a early preview of a work in progress of a breakout game written in ActionScript3. The goal of it was to learn ActionScript 3 and to not use the Flash IDE to make the game.
@@ -29,4 +30,4 @@ flash_content("BrickBuster", "assets/brickbuster/BrickBuster.swf", 640, 480, tru
         	    <li><kbd>Return</kbd> Pauses game</li>
 			</ul>
 			<p><b>More to come:</b> Remember, this is only a preview version. There are many more features and an editor that need to be added so check back to see what's new!</p>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

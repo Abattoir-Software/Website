@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("Galaxy Arena Earth", "Brawling in the streets of the future");
+$pageTitle = "Galaxy Arena Earth";
+head_content($pageTitle, "Brawling in the streets of the future");
 ?>
 				<img src="assets/images/galaxy-arena-earth/galaxy-arena-earth-title.jpg" class="img-responsive center-block" style="padding-bottom: 15px;" alt="Galaxy Arena Earth preview"/>
 				<p>In the future, where do you think aliens will go to slug it out in a battle to the end? That worthless
@@ -14,4 +15,4 @@ head_content("Galaxy Arena Earth", "Brawling in the streets of the future");
 				Engine</a>, the game will allow players to fight each other in the streets of a futuristic Earth. The game started to be developed at the end of January 2007. A playable
 				demo, showing the basic concept of the game working was completed by May of 2007, for college credits. Concept art and character modeling was done by Brett Ryans.
 				Raymond Rivera did the modeling environments, object and technical art. Programming was worked on by Christopher Pollati.<br />
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

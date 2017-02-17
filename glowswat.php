@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("GlowSWAT", "GlowIcon styled images for SAMBA's SWAT Utility");
+$pageTitle = "GlowSWAT";
+head_content($pageTitle, "GlowIcon styled images for SAMBA's SWAT Utility");
 ?>
 			<p>Here they are. GlowIcon Style images for SAMBA Web Administrative Tools. There are two versions, one that's just the standard GlowIcons style based on icons for AmigaOS. It comes in two flavors,
 			a plain background or with gradient backgrounds. These were originally designed for the Amiga version of SAMBA 2 and does not include the &quot;Wizard&quot; icon.</p>
@@ -34,4 +35,4 @@ head_content("GlowSWAT", "GlowIcon styled images for SAMBA's SWAT Utility");
 					<td>15k</td><td>1.0a</td><td>03-Feb-2002</td>
 				</tr>
 			</table>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("Snake In The Grass!",'<span class="badge">Preview</span> Snake Game - V0.01');
+$pageTitle = "Snake In The Grass!";
+head_content($pageTitle,'<span class="badge">Preview</span> Snake Game - V0.01');
 ?>
 			<p>The game is fairly easy to play, especially if you've played games like <a href="https://en.wikipedia.org/wiki/Nibbles_(video_game)" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Nibbles</i></a> or <a href="https://en.wikipedia.org/wiki/Rattler_Race" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Rattler Race</i></a> or the <a href="https://en.wikipedia.org/wiki/Snake_(video_game)" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Snake</i></a> game that
 			comes with many cell phones. Game play is simple and addictive.</p>
@@ -148,4 +149,4 @@ flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, fa
 			about how much fun programming in AMOS was and how easy it was to use. I decided to make a library of commands that were similar
 			to the way AMOS commands worked. This lead to the <a href="alf.html" target="_blank"><i class="glyphicon glyphicon-new-window"></i> Project ALF</a>.</p>
 </div>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

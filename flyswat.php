@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("FlySWAT", "Brighter images for SAMBA's SWAT Utility");
+$pageTitle = "FlySWAT";
+head_content($pageTitle, "Brighter images for SAMBA's SWAT Utility");
 ?>
 			<img src=assets/images/flyswat/flyswat.jpg" class="img-responsive center-block" style="padding-bottom: 15px;" alt="Preview of FlySWAT"/>
 
@@ -21,4 +22,4 @@ head_content("FlySWAT", "Brighter images for SAMBA's SWAT Utility");
 					<td>23k</td><td>1.0a</td><td>03-Feb-2002</td>
 				</tr>
 			</table>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

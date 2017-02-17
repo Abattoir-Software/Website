@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("Project ALF", "AM*S Like Functions");
+$pageTitle = "Project ALF";
+head_content($pageTitle, "AM*S Like Functions");
 ?>
 			<p>One of the reasons I got so interested in game programming was because of AMOS Professional for Amiga computers. AMOS was easy to learn and fun to use. It was easy to open a screen and have a joystick move objects around. However,
 			AMOS was very limitted. There was no real support for Amiga's AGA chipset to allow 256 screens and some of AMOS's tricks caused problems on upgraded Amigas. Eventually, I stopped programming with AMOS and started to mess around with C.
@@ -28,4 +29,4 @@ head_content("Project ALF", "AM*S Like Functions");
 				<li>Make a version for Mac OS X using Cocoa</li>
 				<li>Possible Unix/Linux verison</li>
 			</ul>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

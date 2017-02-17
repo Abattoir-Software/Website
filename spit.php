@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("Spit!","for JavaME cell phones");
+$pageTitle = "Spit!";
+head_content($pageTitle,"for JavaME cell phones");
 ?>
 			<p>Here is a JavaME game designed for Java cell phones. It is based on the card game called &quot;Spit&quot;. The object to to discard all your stock cards as fast as possible. Once the players turns over
 			a card from their draw piles, they must try to place a card either one higher or one lower on top of the discard pile. Both player complete simultaneously to get rid of their cards, one card at a time.
@@ -20,4 +21,4 @@ head_content("Spit!","for JavaME cell phones");
 			there will be versions with smaller and larger cards. One key feature needed is to procedurally generate the cards.
 			Loading all the images for the different card set and background is taking up a lot of space. This should be able to
 			make the JAR file much smaller.</p>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>

@@ -1,6 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("Escape To New York", "A final project for an &quot;Art in New York&quot; class.");
+$pageTitle = "Escape To New York";
+head_content($pageTitle, "A final project for an &quot;Art in New York&quot; class.");
 ?>
 				<div style="height:640" id="gameTable">
 					<table width="800" style="background-image:url(assets/images/escape-to-new-york/background.jpg);background-repeat:no-repeat;" bgcolor="#333333" align="center" cellpadding="0" cellspacing="0">
@@ -49,4 +50,4 @@ $(document).ready(function () {
 	}
 });
 </script>
-<?php end_content(); ?>
+<?php end_content($pageTitle); ?>
