@@ -3,7 +3,12 @@ include_once 'includes/content/media.php';
 head_content("Abattoir Software","This is the home page of Abattoir Software LLC, focusing mainly on game programming as well as other forms of media and design.","Welcome to Abattoir Software");
 ?>
 <div>
-	<p><span class="badge">2017-03-02</span> <a href="blankwords.php">BlankWords</a> is now available for Android&trade; on Google Play!</p>
+	<p><span class="badge">2017-06-20</span> <a href="blankwords.php">BlankWords</a> V1.0.3 is now available for Android&trade; on Google Play!</p>
+	<p>New in V1.0.3
+		<ul>
+			<li>You must enter valid words (no more entering AEIOU)!</li>
+		</ul>
+	</p>
 	<div style="text-align:center;width:430px;">
 		<img style="flost:left;padding-bottom:16px;" src="assets/images/blankwords/114x114.png"><br/>
 		<div style="float:left;">

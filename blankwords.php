@@ -30,6 +30,28 @@ head_content($pageTitle,"");
 		</div>
 
 		<br clear="all"/>
+		<div>
+			<h3>Changelist:</h3>
+			<p>V1.0.3 [2017-06-20]
+				<ul>
+					<li>You must enter valid words (no more entering AEIOU)!</li>
+				</ul>
+			</p>
+			<p>V1.0.2 [2017-03-14] (BlankWords-Free only)
+				<ul>
+					<li>Fixes placement of info bar on game screen</li>
+					<li>Adjusts placement of Instructions and Settings</li>
+				</ul>
+			</p>
+			<p>V1.0.1 [2017-03-02 from GDC 2017!]
+				<ul>
+					<li>Initial Release!</li>
+				</ul>
+			</p>
+
+		</div>
+
+		<br clear="all"/>
 <a data-toggle="collapse" id="historyToggle" data-target="#history" href="#history" aria-expanded="false" aria-controls="history">Click to toggle history...</a>
 			<div class="collapse" id="history" name="history">
 				<h3>History: Java project</h3>
