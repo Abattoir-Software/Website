@@ -212,7 +212,7 @@ function makeFlashCarousel($flashAltText,$data,$id="generic") {
 <?php
 }
 
-function addDisqus($pageName) {
+function addDisqus($pageName) { 
 ?>
 	<div id="disqus_thread"></div>
 	<script>

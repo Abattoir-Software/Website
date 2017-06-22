@@ -25,11 +25,12 @@ function linkOrActive($link,$title) {
 						<ul class="dropdown-menu">
 							<?php linkOrActive("games.php","All");?>
 							<li role="separator" class="divider"></li>
+							<?php linkOrActive("blankwords.php","BlankWords");?>
+							<li role="separator" class="divider"></li>
 							<?php linkOrActive("snake-in-the-grass.php","Snake In The Grass!");?>
 							<?php linkOrActive("bioreactordefender.php","Bioreactor Defender");?>
 							<?php linkOrActive("brickbuster.php","BrickBuster");?>
 							<li role="separator" class="divider"></li>
-							<?php linkOrActive("blankwords.php","BlankWords");?>
 							<?php linkOrActive("galaxy-arena-earth.php","Galaxy Arena Earth");?>
 							<?php linkOrActive("escape-to-new-york.php","Escape to New York");?>
 						</ul>
