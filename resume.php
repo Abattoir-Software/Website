@@ -134,7 +134,6 @@ $workExperienceItems = array(
 		array(
 			"Prototyped a VR walk-through using Unity for Samsung GearVR.",
 			"Maintenance of various programming projects across varied technologies.",
-			"Developed client websites based on designers vision for web and mobile devices.",
 			"Modified and expanded a web baser game built with Phaser.io"
 		)
 	),
@@ -151,7 +150,7 @@ $workExperienceItems = array(
 			"Performed modification of Flash UIs, allowing communication with other SWFs.",
 			"Developed PHP scripts, bridging communications between Flex interfaces and MySQL databases for client websites.",
 			"Developed software using Flex, enabling common code base for web, desktop and mobile."
-		)
+		),"BlankWords (Android)"
 	),
 
 	new WorkExperience("PEARSON","Hoboken, NJ","2010 – 2016","Digital Developer","Developed and maintained web application for educations purposes, as well as development of tools to help produce content for those products.",
