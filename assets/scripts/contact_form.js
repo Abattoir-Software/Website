@@ -1,5 +1,5 @@
 var isRecaptchaValidated = false;
-var recaptchaResonse = "";
+var recaptchaResponse = "";
 var messageSent = false;
 
 function messageSentSuccessfully() {
@@ -9,7 +9,7 @@ function messageSentSuccessfully() {
 	$("#contact :input").prop("disabled", true);
 	$("#noticeArea").html('<div class="alert alert-success"><strong>Success!</strong> Thank you for sending your message. Please allow 24 - 72 hours for a response.</div>');
 }
- 
+
 function recaptchaMessage(message) {
 	$("#submit").css("display","none");
 	$("#submit").prop("disabled","");
@@ -17,9 +17,9 @@ function recaptchaMessage(message) {
 }
 
 function checkRecaptchaResults() {
-	recaptchResponse = grecaptcha.getResponse();
+	recaptchaResponse = grecaptcha.getResponse();
 	$("#submit").prop("disabled","");
-	if(recaptchResponse.length==0) {
+	if(recaptchaResponse.length==0) {
 		isRecaptchaValidated = false;
 		$("#submit").css("display","none");
 	} else {
@@ -30,7 +30,7 @@ function checkRecaptchaResults() {
 }
 
 function recaptchaExpired() {
-	recaptchResponse = grecaptcha.getResponse(); // Should be empty
+	recaptchaResponse = grecaptcha.getResponse(); // Should be empty
 	isRecaptchaValidated = false;
 	if(messageSent==false) {
 		recaptchaMessage("The reCAPTCHA has expired! You need to revalidate that you are not a robot!");
@@ -50,6 +50,7 @@ $(document).ready(function() {
 					phone: form.find('[name="phone"]').val(),
 					company: form.find('[name="company"]').val(),
 					message: form.find('[name="message"]').val(),
+					"g-recaptcha-response": recaptchaResponse
 				}
 			}).success(function(response) {
 				if(response=="PASSED") {
