@@ -112,8 +112,7 @@ head_content("Resume","");
 			</div>
 		</div>
 	</div>
-	<h3>Renaissance Programmer</h3>
-	<h4>Game and Application Development | Workflow Performance Improvement</h4>
+	<h3>Game and Application Development | Workflow Performance Improvement</h3>
 	<p>Programmer with a specialty in digital, as well as traditional art, skilled in developing games or products to increase efficiencies. Thrive on learning how things work, how to make better, and how to educate or inform others. Experienced with various types of programming languages and software for art, 3D modeling, video editing, and office software, as well as several operating systems. Enjoy new challenges to enhance skill set.</p>
 	<h3>Skills</h3>
 <?php
@@ -130,11 +129,10 @@ foreach ($skillItems as $skill) {
 	<h3>Work Experience</h3>
 <?php
 $workExperienceItems = array(
-	new WorkExperience("PROPELLER COMMUNICATIONS","Summit, NJ","2016 – Present","Senior Front End Developer","Oversaw front end of web site development and iOS applications for various clients.",
+	new WorkExperience("KILLER SNAILS","New York, NY","2017 – Present","Lead Developer","Development of educational games and tools for evaluating their efficacy.",
 		array(
-			"Prototyped a VR walk-through using Unity for Samsung GearVR.",
-			"Maintenance of various programming projects across varied technologies.",
-			"Modified and expanded a web baser game built with Phaser.io"
+		    "Development of a web portals for games to help teachers monitor student learning",
+		    "Integrations of third-party APIs with games to help report on players progress"
 		)
 	),
 
@@ -151,6 +149,14 @@ $workExperienceItems = array(
 			"Developed PHP scripts, bridging communications between Flex interfaces and MySQL databases for client websites.",
 			"Developed software using Flex, enabling common code base for web, desktop and mobile."
 		),"BlankWords (Android)"
+	),
+
+	new WorkExperience("PROPELLER COMMUNICATIONS","Summit, NJ","2016 – 2017","Senior Front End Developer","Oversaw front end of web site development and iOS applications for various clients.",
+		array(
+			"Prototyped a VR walk-throughs using Unity for Samsung GearVR and Google VR.",
+			"Maintenance of various programming projects across varied technologies.",
+			"Modified and expanded a web baser game built with Phaser.io"
+		)
 	),
 
 	new WorkExperience("PEARSON","Hoboken, NJ","2010 – 2016","Digital Developer","Developed and maintained web application for educations purposes, as well as development of tools to help produce content for those products.",
