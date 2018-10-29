@@ -35,4 +35,4 @@ head_content($pageTitle, "GlowIcon styled images for SAMBA's SWAT Utility");
 					<td>15k</td><td>1.0a</td><td>03-Feb-2002</td>
 				</tr>
 			</table>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

@@ -30,4 +30,4 @@ flash_content("BrickBuster", "assets/brickbuster/BrickBuster.swf", 640, 480, tru
         	    <li><kbd>Return</kbd> Pauses game</li>
 			</ul>
 			<p><b>More to come:</b> Remember, this is only a preview version. There are many more features and an editor that need to be added so check back to see what's new!</p>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

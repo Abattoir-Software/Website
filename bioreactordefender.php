@@ -36,4 +36,4 @@ flash_content("BioreactorDefender", "assets/bioreactordefender/BioreactorDefende
 				<li><b>Art</b> - Sean Zwier</li>
 				<li><b>Concept</b> Chirs Hoag, Christopher (Kossa) Pollati, Jason Yamauchi, Sean Zwier</li>
 			</ul>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

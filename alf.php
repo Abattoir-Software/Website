@@ -29,4 +29,4 @@ head_content($pageTitle, "AM*S Like Functions");
 				<li>Make a version for Mac OS X using Cocoa</li>
 				<li>Possible Unix/Linux verison</li>
 			</ul>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

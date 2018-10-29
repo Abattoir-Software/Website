@@ -55,4 +55,4 @@ head_content($pageTitle, "MOD for Mantasoft's James Bond: You Only Live Twice");
 					</tr>
 				</table>
 			</div>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

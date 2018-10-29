@@ -21,4 +21,4 @@ head_content($pageTitle,"for JavaME cell phones");
 			there will be versions with smaller and larger cards. One key feature needed is to procedurally generate the cards.
 			Loading all the images for the different card set and background is taking up a lot of space. This should be able to
 			make the JAR file much smaller.</p>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

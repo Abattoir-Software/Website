@@ -15,4 +15,4 @@ head_content($pageTitle, "Brawling in the streets of the future");
 				Engine</a>, the game will allow players to fight each other in the streets of a futuristic Earth. The game started to be developed at the end of January 2007. A playable
 				demo, showing the basic concept of the game working was completed by May of 2007, for college credits. Concept art and character modeling was done by Brett Ryans.
 				Raymond Rivera did the modeling environments, object and technical art. Programming was worked on by Christopher Pollati.<br />
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

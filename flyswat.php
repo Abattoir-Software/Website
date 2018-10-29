@@ -22,4 +22,4 @@ head_content($pageTitle, "Brighter images for SAMBA's SWAT Utility");
 					<td>23k</td><td>1.0a</td><td>03-Feb-2002</td>
 				</tr>
 			</table>
-<?php end_content($pageTitle); ?>
+<?php end_content()); ?>

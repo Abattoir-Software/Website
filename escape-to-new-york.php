@@ -50,4 +50,4 @@ $(document).ready(function () {
 	}
 });
 </script>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

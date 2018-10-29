@@ -63,4 +63,4 @@ head_content($pageTitle,"");
 				the game. The database also stores information about the player, such as their real name, e-mail address, username and password. The game will also
 				keep track of the top player scores.</p>
 			</div>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

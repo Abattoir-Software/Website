@@ -149,4 +149,4 @@ flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, fa
 			about how much fun programming in AMOS was and how easy it was to use. I decided to make a library of commands that were similar
 			to the way AMOS commands worked. This lead to the <a href="alf.html" target="_blank"><i class="glyphicon glyphicon-new-window"></i> Project ALF</a>.</p>
 </div>
-<?php end_content($pageTitle); ?>
+<?php end_content(); ?>

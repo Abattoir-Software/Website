@@ -65,13 +65,14 @@ function start_content($heading, $blurb = "") {
 <?php
 }
 
-function end_content($disqusTitle = "", $additionalContent = "") { ?>
+function end_content($additionalContent = "") { ?>
 			</div>
 		</div>
 	</div>
-<?php if($disqusTitle!=="") { addDisqus($disqusTitle); } ?>		
-<?php include_once 'includes/content/footer.php'; ?>
-<?php if($additionalContent!=="") { echo $additionalContent; } ?>
+<?php
+include_once 'includes/content/footer.php';
+if($additionalContent!=="") { echo $additionalContent; }
+?>
 </body>
 </html>
 <?php
@@ -209,17 +210,6 @@ function makeFlashCarousel($flashAltText,$data,$id="generic") {
 		<span class="glyphicon glyphicon-chevron-right"></span>
 		</a>
 	</div>
-<?php
-}
-
-function addDisqus($pageName) { 
-?>
-	<div id="disqus_thread"></div>
-	<script>
-		var disqus_config = function () { this.page.url = "www.abattoir-software.com/<?= basename($_SERVER['PHP_SELF']) ?>"; this.page.identifier = "<?=$pageName ?>"; };
-		(function() { var d = document, s = d.createElement('script'); s.src = '//abattoirsoftware.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <?php
 }
 ?>
