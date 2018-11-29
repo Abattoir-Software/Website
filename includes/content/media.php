@@ -171,6 +171,7 @@ function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=tr
 				params.allowFullScreen = "true";
 <?php } ?>
 				var attributes = {};
+				if(window.chrome) { swfobject.ua.pv = [100,0,0]; }
 				swfobject.embedSWF("<?=$swfFile?>","flash_content",<?=$width?>,<?=$height?>, "9.0.0", false, flashvars, params, attributes);
 			</script>
 <?php
