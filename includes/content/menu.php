@@ -5,9 +5,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 function linkOrActive($link,$title) {
 	global  $currentPage;
 	if($link==$currentPage) {
-		echo '<li class="active"><a href="' . $link . '"">' . $title . '</a></li>' . "\n";
+		echo '<li class="active"><a href="' . $link . '">' . $title . '</a></li>' . "\n";
 	} else {
-		echo '<li><a href="' . $link . '"">' . $title . '</a></li>' . "\n";
+		echo '<li><a href="' . $link . '">' . $title . '</a></li>' . "\n";
 	}
 }
 ?>
@@ -17,7 +17,7 @@ function linkOrActive($link,$title) {
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.php"><img src="assets/images/abattoir-logo-small.png" style="height: 27px;padding-right: 10px;margin-top: -2px;" class="pull-left">Abattoir Software</a>
+				<a class="navbar-brand" href="index.php"><img src="assets/images/abattoir-logo-small.png" style="height: 27px;padding-right: 10px;margin-top: -2px;" class="pull-left" alt="Abattoir Software logo">Abattoir Software</a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">

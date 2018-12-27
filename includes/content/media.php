@@ -145,21 +145,30 @@ function images_captioned($image, $imageAlt, $caption, $image2, $imageAlt2, $cap
 }
 
 function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=true, $fullScreenInteractive=false, $wmode="window", $flashAltText="Sorry, this content requires Flash", $carouselData=NULL) { ?>
-			<div align="center">
-				<div id="flash_content">
+<div>
+	<ul class="nav nav-tabs" role="tablist" id="info-tabs">
+	    <li role="presentation" class="active"><a href="#images" aria-controls="images" role="tab" data-toggle="tab">Screenshots</a></li>
+	    <li role="presentation"><a href="#flashgame" aria-controls="flashgame" role="tab" data-toggle="tab">Flash Game</a></li>
+	</ul>
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="images">
 <?php
 	if($carouselData!=null) {
 		makeFlashCarousel($flashAltText, $carouselData, $title);
-	} else {
-?>
-					<h4><?=$flashAltText?></h4>
-<?php
 	}
 ?>
+	</div>
+	<div role="tabpanel" class="tab-pane" id="flashgame">
+		<div class="center-block">
+			<div id="flash_content" style="display: block;">
+<?php
+	$flashAltText = str_ireplace("Flash", '<a href="http://www.adobe.com/go/getflashplayer" class="btn btn-sm btn-warning">Flash</a>', $flashAltText);
+?>
+					<h4><?=$flashAltText?></h4>
 				</div>
 			</div>
-			<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js" type="text/javascript"></script>
-			<script type="text/javascript">
+			<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+			<script>
 				var flashvars = {};
 				var params = {};
 				params.quality = "high";
@@ -174,21 +183,23 @@ function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=tr
 				if(window.chrome) { swfobject.ua.pv = [100,0,0]; }
 				swfobject.embedSWF("<?=$swfFile?>","flash_content",<?=$width?>,<?=$height?>, "9.0.0", false, flashvars, params, attributes);
 			</script>
+		</div>
+	</div>
+</div>
 <?php
 }
 
 function makeFlashCarousel($flashAltText,$data,$id="generic") {
 ?>
-	<div class="flashAlt"><?=$flashAltText?></div>
 	<div id="carousel-<?=$id?>" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 <?php
 	for($i = 0; $i<count($data);$i++) {
 		echo "\t\t\t" . '<li data-target="#carousel-' . $id . '" data-slide-to="' . $i . '"';
 		if($i==0) {
-			echo ' class="active';
+			echo ' class="active"';
 		}
-		echo '"></li>' . "\n";
+		echo '></li>' . "\n";
 	}
 ?>
 		</ol>
@@ -197,19 +208,15 @@ function makeFlashCarousel($flashAltText,$data,$id="generic") {
 	$count = 0;
 	foreach($data as $item) {?>
 			<div class="item<?php if($count==0) { echo " active"; $count++; } ?>">
-				<img src="<?=$item->image?>" alt="...">
+				<img src="<?=$item->image?>" class="center-block" alt="Screen shot titled: <?=$item->caption?>">
 				<div class="carousel-caption">
 					<h3><?=$item->caption?></h3>
 				</div>
 			</div>
 <?php } ?>
 		</div>
-		<a class="left carousel-control" href="#carousel-<?=$id?>" role="button" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left"></span>
-		</a>
-		<a class="right carousel-control" href="#carousel-<?=$id?>" role="button" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right"></span>
-		</a>
+		<a class="left carousel-control" href="#carousel-<?=$id?>" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#carousel-<?=$id?>" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 	</div>
 <?php
 }

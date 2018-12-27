@@ -9,7 +9,6 @@ head_content($pageTitle,'<span class="badge">Preview</span> Snake Game - V0.02')
 			or yourself! The faster you move, the more points you'll get. The smaller the fruit the more points it's worth. The more fruit you eat, the bigger you get and then you can move on to the next level.</p>
 <?php
 $snakeCarousel = array (
-		new CarouselInfo("assets/sitg/SnakeInTheGrass.swf", "If you have Flash, click here to play!"),
 		new CarouselInfo("assets/images/snake-in-the-grass/snake-in-the-grass_shot1.jpg", "Title screen"),
 		new CarouselInfo("assets/images/snake-in-the-grass/snake-in-the-grass_shot2.jpg", "Watch out for those walls!"),
 		new CarouselInfo("assets/images/snake-in-the-grass/snake-in-the-grass_shot3.jpg", "Multiplayer action"),
@@ -17,7 +16,7 @@ $snakeCarousel = array (
 );
 
 flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, false, true, "direct",
-		'To play the game, you need to visit this page with Flash enabled. In the meantime, here are some screenshots:', $snakeCarousel);
+		'To play the game, you need to visit this page with Flash enabled.', $snakeCarousel);
 ?>
 			<h4>Speed</h4>
 			<p>How fast your snake will move. Currently, the snake speed does not increase throughout play. The faster your snake moves, the more points each fruit is worth.</p>
@@ -150,7 +149,7 @@ flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, fa
 				Steffen Haeuser.<br />
 				<br />
 <?php image_captioned("assets/images/snake-in-the-grass/snake-in-the-grass-os4-menu.png", "Snake in the Grass! on OS 4 menu screen shot", "Screen shot of the start up page of <i>Snake In The Grass!</i> rewritten in C. This version allows for a 640x480 256 color screen.")?>
-<?php image_captioned("assets/images/snake-in-the-grass/snake-in-the-grass-os4-play.png", "Snake in the Grass! on OS 4 menu screen shot", "Another screen shot of the &quot;C&quot; version of <i>Snake In The Grass!</i> allows up to four players to play together.")?>
+<?php image_captioned("assets/images/snake-in-the-grass/snake-in-the-grass-os4-play.png", "Snake in the Grass! on OS 4 game play screen shot", "Another screen shot of the &quot;C&quot; version of <i>Snake In The Grass!</i> allows up to four players to play together.")?>
 				<p>Eventually, I ran into a slight problem with the double buffer method used in those libraries, which were very
 				different than the way AMOS kind of functions were working. Slowly, I started to rewrite all the code handling screens and drawing
 				functions from these libraries and created my own for making sprites and various graphics routines. Then it was put on a shelf for

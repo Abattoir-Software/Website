@@ -19,7 +19,7 @@ $brickbusterCarousel = array (
 );
 
 flash_content("BrickBuster", "assets/brickbuster/BrickBuster.swf", 640, 480, true, false, "window",
-		'To play the game, you need to visit this page with Flash enabled. In the meantime, here are some screenshots:', $brickbusterCarousel );
+		'To play the game, you need to visit this page with Flash enabled.', $brickbusterCarousel );
 ?>
 			</div>
             <h4>Controls</h4>
