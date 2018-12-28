@@ -1,7 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
 $pageTitle = "Snake In The Grass!";
-head_content($pageTitle,'<span class="badge">Preview</span> Snake Game - V0.02');
+head_content($pageTitle,'<span class="badge">Preview</span> Snake Game - V0.03 - Mission Mode and preliminary controller support!');
 ?>
 			<p>The game is fairly easy to play, especially if you've played games like <a href="https://en.wikipedia.org/wiki/Nibbles_(video_game)" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Nibbles</i></a> or <a href="https://en.wikipedia.org/wiki/Rattler_Race" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Rattler Race</i></a> or the <a href="https://en.wikipedia.org/wiki/Snake_(video_game)" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Snake</i></a> game that
 			comes with many cell phones. Game play is simple and addictive.</p>
@@ -24,13 +24,22 @@ flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, fa
 			<h4>Fruit Mode</h4>
 			<p>Crazy Fruit will move the fruit around the field. If you select Crazy Fruit, you can then select how long before it moves.</p>
 			<br/>
+			<h4>Game Modes (for more than one player)</h4>
+			<ul class="list-unstyled">
+				<li><b>Gobble and Grow</b> - Everyone keeps playing until everyone is dead</li>
+				<!--
+				<li><b>Score King</b> - Winner is declaired by who ever has the highest score.</li>
+				-->
+				<li><b>Mission Mode</b> - Snakes will only grow if they get the fruit they are craving.</li>
+			</ul>
+			<br/>
 			<h4>Menu Controls</h4>
 			<ul class="list-unstyled">
 				<li><kbd>Mouse</kbd> Choose menu items</li>
 				<li><kbd>Space</kbd> or <kbd>Mouse Click</kbd> or <kbd>A Button</kbd> Selects Menu Item</li>
-				<li><kbd>Backspacex/Delete</kbd> or <kbd>B Button</kbd> Previous Menu Item</li>
+				<li><kbd>Backspace/Delete</kbd> or <kbd>B Button</kbd> Previous Menu Item</li>
 				<li><kbd>F</kbd> Full screen</li>
-				<li><kbd>Joystick 1</kbd> XBox/XboxOne Joystick will be detected with
+				<li><kbd>Joystick 1</kbd> XBox/XboxOne Joystick wired
 			</ul>
 			<br/>
 			<h4>Controller Support</h4>
@@ -92,6 +101,11 @@ flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, fa
 			<a data-toggle="collapse" id="historyToggle" data-target="#history" href="#history" aria-expanded="false" aria-controls="history">Click to toggle history...</a>
 			<div class="collapse" id="history" name="history">
 				<h3>History: Previous Amiga versions</h3>
+				<h4>Origins</h4>
+				<p><i>Snake In The Grass!</i> started on a Christmas day in the early 1990's when I wanted to play <a href="https://en.wikipedia.org/wiki/Nibbles_(video_game)" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Nibbles</i></a> on my Amiga. There wasn't anything like it on
+				<a href="http://aminet.net/" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>Aminet</i></a> so I started messing around in <a href="https://en.wikipedia.org/wiki/AMOS_(programming_language)" target="_blank"><i class="glyphicon glyphicon-new-window"></i> <i>AMOS Professional</i></a> on my A1200.
+				It was my first time working on a game myself. I started realizing how much work really goes into games, after seeing how slow it was to always draw up to 80 bobs for 2 player snakes every frame. I had to think about optimizing it so I only moved 2 of the bobs at a time and changing the palettes so that I could use a sprite for the fruit, just to squeeze out a little more speed.
+				It stated to become a fun game for my friends and I to play, so I though about releasing it on Aminet, but never actually posted it up there, just kept it on my personal site.
 				<h4>AMOS Demo V0.01</h4>
 <?php images_captioned("assets/images/snake-in-the-grass/snake-in-the-grass-demo-ss02.png", "Snake in the Grass! AMOS Demo screen shot 1", "<i>Snake In The Grass!</i> (AMOS Demo V0.01)", "assets/images/snake-in-the-grass/snake-in-the-grass-demo-ss01.png", "Snake in the Grass! AMOS Demo screen shot 2", "Two player madness of <i>Snake In The Grass</i>!"); ?>
 				<p>The idea of the game is simple, move around and eat the fruit.  All you have to do is avoid the bushes and yourself.
@@ -118,9 +132,9 @@ flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, fa
 					<li>Game slows down when both snakes are pretty big (AMOS limit)</li>
 					<li>If one player's snake is on the space were the other player's snake is supposed to reappear,
 					the other player will continue to die until the first player moves</li>
-					<li>Sometimes you can pass through each other if you cross pere</li>
+					<li>Sometimes you can pass through each other if you cross exactly in between cells</li>
 				</ul>
-				<b>Things that were planned to be added:</b><br />
+				<b>Things that were planned to be added:</b><br />z
 				<ul>
 					<li> High score records</li>
 					<li> Play against the computer</li>
