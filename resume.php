@@ -113,13 +113,13 @@ head_content("Resume","");
 		</div>
 	</div>
 	<h3>Game and Application Development | Workflow Performance Improvement</h3>
-	<p>Programmer with a specialty in digital, as well as traditional art, skilled in developing games or products to increase efficiencies. Thrive on learning how things work, how to make better, and how to educate or inform others. Experienced with various types of programming languages and software for art, 3D modeling, video editing, and office software, as well as several operating systems. Enjoy new challenges to enhance skill set.</p>
+	<p>Programmer with a specialty in digital, as well as traditional art, skilled in developing games or products to increase efficiencies. Thrives on learning how things work, how to make better, and how to educate or inform others. Experienced with various types of programming languages and software for art, 3D modeling, video editing, and office software, as well as several operating systems. Enjoy new challenges to enhance skill set.</p>
 	<h3>Skills</h3>
 <?php
 $skillItems = array (
-	new Skills("Programming", array("ActionScript 3","Flex","C#","PHP","Javascript","Java","Python","C/C++")),
-	new Skills("Development Software", array("<i>Eclipse</i>", "<i>MonoDevelop</i>", "<i>Visual Studio</i>", "<i>XCode</i>", "<i>GitHub</i>", "<i>Jira</i>", "<i>Trac</i>", "<i>Git</i>", "<i>SVN</i>")),
-	new Skills("Other Software",array("includes Adobe <i>Creative Cloud</i>","Document Foundation's <i>LibreOffice</i>","Microsoft <i>Office</i>","some experience in 3D modeling, like <i>Maya</i>", "<i>Cinema4D</i>", "video editing", "<i>Ubuntu</i> Linux"))
+	new Skills("Programming", array("C#","PHP","Javascript","Java","ActionScript 3","Flex","Python","C/C++")),
+	new Skills("Development Software", array("<i>Eclipse</i>","<i>Visual Studio</i>", "<i>XCode</i>", "<i>GitHub/GitLab</i>", "<i>Git</i>", "<i>SVN</i>", "<i>Trello</i>", "<i>Slack</i>", "<i>Jira</i>")),
+	new Skills("Other Software",array("includes Adobe <i>Creative Cloud</i>","Document Foundation's <i>LibreOffice</i>","Microsoft <i>Office</i>","Microsoft <i>Office</i>","Google <i>G Suite</i>","some experience in 3D modeling, video editing", "<i>Ubuntu</i> Linux"))
 );
 
 foreach ($skillItems as $skill) {
@@ -131,6 +131,7 @@ foreach ($skillItems as $skill) {
 $workExperienceItems = array(
 	new WorkExperience("KILLER SNAILS","New York, NY","2017 – Present","Lead Developer","Development of educational games and tools for evaluating their efficacy.",
 		array(
+			"Produced several VR experiences with Unity for Google Cardboard on iOS and Android",
 		    "Development of a web portals for games to help teachers monitor student learning",
 		    "Integrations of third-party APIs with games to help report on players progress"
 		)
@@ -138,7 +139,8 @@ $workExperienceItems = array(
 
 	new WorkExperience("BLOOMFIELD COLLEGE","Bloomfield, NJ","2009 – Present","Adjunct Professor","Teach various classes for game programming ranging from Unity, XNA/C# and to ActionScript 3 for Flex, Flash and AIR to adapt to current languages and tools.",
 		array(
-			"Led 2 different levels of a classes where student groups created games to facilitate teamwork." ,
+			"Teach different levels of Unity development, from basics to AI.",
+			"Led different levels of a classes where student groups created games to facilitate teamwork.",
 			"Instructed class designed to help student learn about software and practices used in the games industry, preparing students for working in a studio environment."
 		)
 	),
@@ -153,13 +155,13 @@ $workExperienceItems = array(
 
 	new WorkExperience("PROPELLER COMMUNICATIONS","Summit, NJ","2016 – 2017","Senior Front End Developer","Oversaw front end of web site development and iOS applications for various clients.",
 		array(
-			"Prototyped a VR walk-throughs using Unity for Samsung GearVR and Google VR.",
+			"Prototyped a VR walkthroughs using Unity for Samsung GearVR and Google VR.",
 			"Maintenance of various programming projects across varied technologies.",
 			"Modified and expanded a web baser game built with Phaser.io"
 		)
 	),
 
-	new WorkExperience("PEARSON","Hoboken, NJ","2010 – 2016","Digital Developer","Developed and maintained web application for educations purposes, as well as development of tools to help produce content for those products.",
+	new WorkExperience("PEARSON","Hoboken, NJ","2010 – 2016","Digital Developer","Developed and maintained web application for educational purposes, as well as development of tools to help produce content for those products.",
 		array(
 			"Developed desktop application utilizing MySQL database, streamlining management of tens-of-thousands of multimedia assets.",
 			"Created tool, simplifying batch re-encoding of videos and the embedding captions.",
@@ -191,10 +193,10 @@ foreach ($workExperienceItems as $item) {
 }
 
 $achievments = array(
-	"Member of the International Game Developer’s Association (IGDA) since 2006",
+	"Member of the International Game Developers Association (IGDA) since 2006",
 	"Presenter, New Jersey Chapter of the IGDA",
-	"IGDA Game Developer’s Conference 2007 Scholarship recipient",
-	"<b>Bachelor of Arts (BA)</b>, Game Development – Programming, Bloomfield College, Bloomfield, NJ, <i>summa cum laude</i>, GPA: 3.894<ul><li>Dean’s List</li><li>Developed a playable demo of a 3D, multi-player game with Torque Game Engine in three months for Capstone Project</li></ul>",
+	"IGDA Game Developers Conference 2007 Scholarship recipient",
+	"<b>Bachelor of Arts (BA)</b>, Game Development – Programming, Bloomfield College, Bloomfield, NJ, <i>summa cum laude</i>, GPA: 3.894<ul><li>Dean’s List</li><li>Developed a playable demo of a 3D, multiplayer game with Torque Game Engine in three months for Capstone Project</li></ul>",
 	"<b>Associate of Applied Science (AAS)</b>, Commercial Graphics / Computer Animation, Bergen Community College, Paramus, NJ<ul><li>Curricular Award of Excellence in Computer Animation</li></ul>"
 );
 ?>
@@ -211,8 +213,8 @@ $achievments = array(
 		<a class="pull-right" href="https://get.adobe.com/reader/"><img src="assets/images/layout/Get_Adobe_Acrobat_Reader_DC_web_button_158x39.fw.png"></a>
 		<a href="assets/downloads/resume/Resume-ChristopherPollati.pdf" target="_blank"><img src="assets/images/layout/icons/pdf.png"/> Christopher Pollati's Resume (PDF)</a>
 		<p class="text-muted">Last updated: <?php echo date("F d, Y"/* H:i"*/, filemtime("assets/downloads/resume/Resume-ChristopherPollati.pdf")); ?></p>
-		<a href="assets/downloads/resume/Resume-ChristopherPollati.doc" target="_blank"><img src="assets/images/layout/icons/word.png"/> Christopher Pollati's Resume (Word Doc)</a>
-		<p class="text-muted">Last updated: <?php echo date("F d, Y"/* H:i"*/, filemtime("assets/downloads/resume/Resume-ChristopherPollati.doc")); ?></p>
+		<a href="assets/downloads/resume/Resume-ChristopherPollati.docx" target="_blank"><img src="assets/images/layout/icons/word.png"/> Christopher Pollati's Resume (Word Docx)</a>
+		<p class="text-muted">Last updated: <?php echo date("F d, Y"/* H:i"*/, filemtime("assets/downloads/resume/Resume-ChristopherPollati.docx")); ?></p>
 	</div>
 	<div>
 	</div>
