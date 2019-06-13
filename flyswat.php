@@ -3,8 +3,7 @@ include_once 'includes/content/media.php';
 $pageTitle = "FlySWAT";
 head_content($pageTitle, "Brighter images for SAMBA's SWAT Utility");
 ?>
-			<img src=assets/images/flyswat/flyswat.jpg" class="img-responsive center-block" style="padding-bottom: 15px;" alt="Preview of FlySWAT"/>
-
+			<img src="assets/images/flyswat/flyswat.jpg" class="img-responsive center-block" style="padding-bottom: 15px;" alt="Preview of FlySWAT"/>
 			<p>Here is a batch of icons for SAMBA Web Administrative Tools.  Each one of these beautiful icons were hand crafted, personally,
 			by me.  These icons were made to add a little color to the SWAT page.  These icons were design to look great on at least a
 			screen mode with 64 colors.</p>
@@ -22,4 +21,4 @@ head_content($pageTitle, "Brighter images for SAMBA's SWAT Utility");
 					<td>23k</td><td>1.0a</td><td>03-Feb-2002</td>
 				</tr>
 			</table>
-<?php end_content()); ?>
+<?php end_content(); ?>
