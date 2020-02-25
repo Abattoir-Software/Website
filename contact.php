@@ -74,7 +74,7 @@ head_content($pageTitle);
 				<hr/>
 				<address>
 					<b>Abattoir Software LLC</b><br />
-					2 Grace Avenue<br />
-					Clifton, NJ 07011-2302<br />
+					16 Albatross Dr<br />
+					Howell, NJ 07731-2869<br />
 				</address>
 <?php end_content("","\t".'<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>'."\n\t".'<script src="assets/scripts/contact_form.js"></script>');?>
