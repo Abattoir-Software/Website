@@ -14,5 +14,5 @@ write_media("BrickBuster", "A break out type game, made with Flash.", "brickbust
 <?php
 write_media("Galaxy Arena Earth", "A 3D brawller, that takes place in a futuristic Earth which has become the battle ground for aliens to settle their disputes", "galaxy-arena-earth.php", "assets/images/computer-works/galaxy-arena-earth_icon.jpg",true);
 write_media("Escape to New York", "A quick little point-and-click Flash adventure game, done for a final assignment of a class.", "escape-to-new-york.php", "assets/images/computer-works/escape-to-new-york_icon.jpg",true);
-end_content($pageTitle);
+end_content();
 ?>
