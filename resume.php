@@ -97,7 +97,7 @@ head_content("Resume","");
 				</span>
 				<h3>Christopher Pollati <span class="text-muted">(formerly Kossa)</span></h3>
 				<hr style="margin: 3px 0 8px 0; border-top: 3px solid black;"/>
-				Clifton, NJ 07011-2302
+				Howell, NJ 07731-2869
 				<span class="pull-right">
 					973.931.3693<br/>
 				</span>
@@ -113,13 +113,13 @@ head_content("Resume","");
 		</div>
 	</div>
 	<h3>Game and Application Development | Workflow Performance Improvement</h3>
-	<p>Programmer with a specialty in digital, as well as traditional art, skilled in developing games or products to increase efficiencies. Thrives on learning how things work, how to make better, and how to educate or inform others. Experienced with various types of programming languages and software for art, 3D modeling, video editing, and office software, as well as several operating systems. Enjoy new challenges to enhance skill set.</p>
+	<p>Programmer with a specialty in digital, as well as traditional art, skilled in developing games or products to increase efficiencies. Thrives on learning how things work, how to make better, and how to educate or inform others. Experienced with various types of programming languages and software for art, 3D modeling, video editing, and office software, as well as several operating systems. Enjoys new challenges to enhance skill set.</p>
 	<h3>Skills</h3>
 <?php
 $skillItems = array (
 	new Skills("Programming", array("C#","PHP","Javascript","Java","ActionScript 3","Flex","Python","C/C++")),
-	new Skills("Development Software", array("<i>Eclipse</i>","<i>Visual Studio</i>", "<i>XCode</i>", "<i>GitHub/GitLab</i>", "<i>Git</i>", "<i>SVN</i>", "<i>Trello</i>", "<i>Slack</i>", "<i>Jira</i>")),
-	new Skills("Other Software",array("includes Adobe <i>Creative Cloud</i>","Document Foundation's <i>LibreOffice</i>","Microsoft <i>Office</i>","Microsoft <i>Office</i>","Google <i>G Suite</i>","some experience in 3D modeling, video editing", "<i>Ubuntu</i> Linux"))
+	new Skills("Development Software", array("<i>Eclipse</i>","<i>Visual Studio Code</i>","<i>Visual Studio</i>","<i>Xcode</i>","<i>IntelliJ/Android Studio</i>","<i>GitHub/GitLab</i>","<i>Git</i>","<i>SVN</i>","<i>Trello</i>","<i>Slack</i>","<i>Jira</i>")),
+	new Skills("Other Software",array("includes Adobe <i>Creative Cloud</i>","Document Foundation's <i>LibreOffice</i>","Microsoft <i>Office</i>","Microsoft <i>Office</i>","Google <i>G Suite</i>", "<i>Ubuntu</i> Linux","some experience in 3D modeling, video editing"))
 );
 
 foreach ($skillItems as $skill) {
@@ -131,17 +131,17 @@ foreach ($skillItems as $skill) {
 $workExperienceItems = array(
 	new WorkExperience("KILLER SNAILS","New York, NY","2017 – Present","Lead Developer","Development of educational games and tools for evaluating their efficacy.",
 		array(
-			"Produced several VR experiences with Unity for Google Cardboard on iOS and Android",
-		    "Development of a web portals for games to help teachers monitor student learning",
-		    "Integrations of third-party APIs with games to help report on players progress"
+			"Produced several VR experiences using Unity that target Google Cardboard on iOS and Android",
+		    "Development of web portals for games to help teachers monitor student learning in real time",
+		    "Integrations of third-party APIs with account system for classroom management of games"
 		)
 	),
 
 	new WorkExperience("BLOOMFIELD COLLEGE","Bloomfield, NJ","2009 – Present","Adjunct Professor","Teach various classes for game programming ranging from Unity, XNA/C# and to ActionScript 3 for Flex, Flash and AIR to adapt to current languages and tools.",
 		array(
 			"Teach different levels of Unity development, from basics to AI.",
-			"Led different levels of a classes where student groups created games to facilitate teamwork.",
-			"Instructed class designed to help student learn about software and practices used in the games industry, preparing students for working in a studio environment."
+			"Led different levels of a class where student groups created games to facilitate teamwork.",
+			"Instructed class designed to help students learn about software and practices used in the games industry, preparing students for working in a studio environment."
 		)
 	),
 
@@ -161,7 +161,7 @@ $workExperienceItems = array(
 		)
 	),
 
-	new WorkExperience("PEARSON","Hoboken, NJ","2010 – 2016","Digital Developer","Developed and maintained web application for educational purposes, as well as development of tools to help produce content for those products.",
+	new WorkExperience("PEARSON","Hoboken, NJ","2010 – 2016","Digital Developer","Developed and maintained web applications for educational purposes, as well as development of tools to help produce content for those products.",
 		array(
 			"Developed desktop application utilizing MySQL database, streamlining management of tens-of-thousands of multimedia assets.",
 			"Created tool, simplifying batch re-encoding of videos and the embedding captions.",
