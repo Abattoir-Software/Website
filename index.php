@@ -4,16 +4,18 @@ head_content("Abattoir Software","This is the home page of Abattoir Software LLC
 ?>
 <div>
 	<a href="blankwords.php">BlankWords</a> is available for Android&trade; on Google Play!</p>
-	<div style="text-align:center;width:430px;">
+	<div style="text-align:center;width:230px;">
 		<img style="flost:left;padding-bottom:16px;" src="assets/images/blankwords/114x114.png"><br/>
 		<div style="float:left;">
 			Buy BlankWords<br/>
 			<a href="https://play.google.com/store/apps/details?id=com.abattoirsoftware.BlankWords" target="_blank" style="padding:0;"><img src="assets/images/google-play-badge.png" width="215" height="83" style="width:215px;height:83px;"/></a>
 		</div>
+<?php /*
 		<div style="float:left;">
 			Or try BlankWords Free<br/>
 			<a href="https://play.google.com/store/apps/details?id=com.abattoirsoftware.BlankWordsFree" target="_blank"><img src="assets/images/google-play-badge.png" width="215" height="83" style="width:215px;height:83px;"/></a>
 		</div>
+*/ ?>
 		<br clear="all"/>
 		<br/>
 	</div>
