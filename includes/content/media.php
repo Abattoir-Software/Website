@@ -42,7 +42,6 @@ function write_media($title, $descript, $link, $image, $useBorder = false, $move
 function head_content($title, $blurb = "", $altHeader = "") {
 	include_once 'includes/content/common_head.php';
 	write_header($title);
-	include_once 'includes/analyticstracking.php';
 	include_once 'includes/content/menu.php';
 	if($altHeader=="") {
 		start_content($title,$blurb);

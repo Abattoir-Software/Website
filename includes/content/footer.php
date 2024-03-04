@@ -1,6 +1,7 @@
 	<footer class="footer">
 		<div class="container-fluid">
-			<p class="text-muted" style="padding: 24px 0 14px 0;">&copy; <?php echo date("Y"); ?> Abattoir Software, LLC. All rights reserved.</p>
+			<p class="pull-left text-muted" style="padding: 24px 0 14px 0;">&copy; <?php echo date("Y"); ?> Abattoir Software, LLC. All rights reserved.</p>
+			<p class="pull-right text-muted" style="padding: 24px 0 14px 0;"><a href="privacy-policy.php">Privacy Policy</a></p>
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
