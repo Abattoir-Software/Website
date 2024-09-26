@@ -15,7 +15,7 @@ $bioreactorCarousel = array (
 );
 
 flash_content("BioreactorDefender", "assets/bioreactordefender/BioreactorDefender.swf", 704, 570, false, true, "direct",
-		'To play the game, you need to visit this page with Flash enabled.', $bioreactorCarousel);
+		"This uses Ruffle to emulate Flash! Some fonts aren't rendered properly", $bioreactorCarousel);
 ?>
 			<h4>Controls</h4>
 			<ul class="list-unstyled">

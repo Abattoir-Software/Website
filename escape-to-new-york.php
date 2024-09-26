@@ -22,8 +22,7 @@ $escapeCarousel = array (
 		new CarouselInfo("assets/images/escape-to-new-york/escape-to-new-york_shot5.jpg", "Getting hungry?"),
 		new CarouselInfo("assets/images/escape-to-new-york/escape-to-new-york_shot6.jpg", "Did you make it home?"),
 );
-
-flash_content("Escape To New York", "assets/flash/EscapeToNewYork.swf", 640, 480, true, false, "window", "You need Flash enabled to play this game", null);
+flash_content("Escape To New York", "assets/flash/EscapeToNewYork.swf", 640, 480, true, false, "window", "", $escapeCarousel);
 ?>
 							</td>
 							<td width="80">&nbsp;</td>
@@ -39,15 +38,4 @@ flash_content("Escape To New York", "assets/flash/EscapeToNewYork.swf", 640, 480
 						</tr>
 					</table>
 				</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(document).ready(function () {
-	if(swfobject.getFlashPlayerVersion().major === 0) {
-		$("#gameTable").html(`
-<?php makeFlashCarousel('To play the game, you need to visit this page with Flash enabled. In the meantime, here are some screenshots:', $escapeCarousel, true); ?>
-		`);
-	}
-});
-</script>
 <?php end_content(); ?>

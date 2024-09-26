@@ -8,15 +8,16 @@ head_content($pageTitle,'<span class="badge">Preview</span> Snake Game - V0.03 -
 			<p>Control your snake to start eating food to grow.  Once you start moving, there's no stopping your snake.  You can't run into the bushes, other players,
 			or yourself! The faster you move, the more points you'll get. The smaller the fruit the more points it's worth. The more fruit you eat, the bigger you get and then you can move on to the next level.</p>
 <?php
+$imageBase = "assets/images/snake-in-the-grass/";
 $snakeCarousel = array (
-		new CarouselInfo("assets/images/snake-in-the-grass/snake-in-the-grass_shot1.jpg", "Title screen"),
-		new CarouselInfo("assets/images/snake-in-the-grass/snake-in-the-grass_shot2.jpg", "Watch out for those walls!"),
-		new CarouselInfo("assets/images/snake-in-the-grass/snake-in-the-grass_shot3.jpg", "Multiplayer action"),
-		new CarouselInfo("assets/images/snake-in-the-grass/snake-in-the-grass_shot4.jpg", "Go go go!")
+		new CarouselInfo($imageBase."snake-in-the-grass_shot1.jpg", "Title screen"),
+		new CarouselInfo($imageBase."snake-in-the-grass_shot2.jpg", "Watch out for those walls!"),
+		new CarouselInfo($imageBase."snake-in-the-grass_shot3.jpg", "Multiplayer action"),
+		new CarouselInfo($imageBase."snake-in-the-grass_shot4.jpg", "Go go go!")
 );
 
 flash_content("SnakeInTheGrass", "assets/sitg/SnakeInTheGrass.swf", 640, 480, false, true, "direct",
-		'To play the game, you need to visit this page with Flash enabled.', $snakeCarousel);
+		"Ruffle has almost gotten all the emulation working for this!", $snakeCarousel);
 ?>
 			<h4>Speed</h4>
 			<p>How fast your snake will move. Currently, the snake speed does not increase throughout play. The faster your snake moves, the more points each fruit is worth.</p>

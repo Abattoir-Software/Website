@@ -159,13 +159,15 @@ function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=tr
 	</div>
 	<div role="tabpanel" class="tab-pane" id="flashgame">
 		<div class="center-block">
-			<div id="flash_content" style="display: block;">
+			<div id="flash_content" style="display: block;text-align: center;">
 <?php
-	$flashAltText = str_ireplace("Flash", '<a href="http://www.adobe.com/go/getflashplayer" class="btn btn-sm btn-warning">Flash</a>', $flashAltText);
+	//$flashAltText = str_ireplace("Flash", '<a href="http://www.adobe.com/go/getflashplayer" class="btn btn-sm btn-warning">Flash</a>', $flashAltText);
+	$flashAltText = str_ireplace("Ruffle", '<a href="https://ruffle.rs/" class="btn btn-sm btn-primary">Ruffle</a>', $flashAltText);
 ?>
 					<h4><?=$flashAltText?></h4>
 				</div>
 			</div>
+<!--
 			<script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 			<script>
 				var flashvars = {};
@@ -181,6 +183,20 @@ function flash_content($title, $swfFile, $width=640, $height=480, $fullScreen=tr
 				var attributes = {};
 				if(window.chrome) { swfobject.ua.pv = [100,0,0]; }
 				swfobject.embedSWF("<?=$swfFile?>","flash_content",<?=$width?>,<?=$height?>, "9.0.0", false, flashvars, params, attributes);
+			</script>
+-->
+			<!-- Thanks to https://www.purplesquirrels.com.au/2023/12/bringing-life-back-to-old-flash-content/#:~:text=Switching%20the%20SWFObject%20embeds%20to,);%20const%20player%20=%20ruffle. -->
+			<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+			<!-- create a Ruffle player, add to the div, load the SWF -->
+			<script>
+				window.RufflePlayer = window.RufflePlayer || {};
+				window.addEventListener("load", (event) => {
+					const ruffle = window.RufflePlayer.newest();
+					const player = ruffle.createPlayer();
+					const container = document.getElementById("flash_content");
+					container.appendChild(player);
+					player.load("<?=$swfFile?>");
+				});
 			</script>
 		</div>
 	</div>

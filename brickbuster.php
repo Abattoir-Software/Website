@@ -19,7 +19,7 @@ $brickbusterCarousel = array (
 );
 
 flash_content("BrickBuster", "assets/brickbuster/BrickBuster.swf", 640, 480, true, false, "window",
-		'To play the game, you need to visit this page with Flash enabled.', $brickbusterCarousel );
+		"This uses Ruffle to emulate Flash! Some fonts aren't rendered properly", $brickbusterCarousel );
 ?>
 			</div>
             <h4>Controls</h4>
