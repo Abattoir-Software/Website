@@ -18,7 +18,7 @@ function write_media($title, $descript, $link, $image, $useBorder = false, $move
 <?php if($link!="") { ?>
 						<a href="<?=$link?>">
 	<?php } ?>
-						<img class="media-object<?php if($moveImage) { echo 'hidden-xs visible-sm-block visible-md visible-lg'; }?><?php if($useBorder) { echo " itemIcon"; } ?>" src="<?=$image?>" alt="">
+						<img class="media-object<?php if($moveImage) { echo ' hidden-xs visible-sm-block visible-md visible-lg'; }?><?php if($useBorder) { echo " itemIcon"; } ?>" src="<?=$image?>" alt="">
 <?php if($link!="") { ?>
 						</a>
 <?php } ?>

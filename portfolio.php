@@ -1,7 +1,7 @@
 <?php
 include_once 'includes/content/media.php';
 $pageTitle = "Portfolio";
-head_content($pageTitle, "Here are some links to some of the recent work done. All links open in a new window. Enjoy.");
+head_content($pageTitle, "Here are some links to some of the more professional things that I worked on. All links open in a new window. Enjoy.");
 ?>
 <?php
 write_media("Clickable Map","<h3>Flex</h3><p><small>(No live link available)</small></p><p>An example of a Flash/Flex based project that allows the production editor to update articles  by modifying a XML files.</p>","","assets/images/portfolio/clickablemap.jpg",false,true);

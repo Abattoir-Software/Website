@@ -1,6 +1,6 @@
 <?php
 include_once 'includes/content/media.php';
-head_content("Archive", "Here are some old projects that I had worked on in my spare time.");
+head_content("Archive", "Here are some really old projects that I had worked on in my spare time a long, long time ago. Back in my Amiga days.");
 write_media("Games","","",write_splat(1));
 write_media("Spit!","First dive into the world of Java 2 ME. Based upon the card game &quot;Spit&quot;, this game is what I have been learning to program
 					J2ME games. It was being designed for the Sony Ericsson P910i Smart Phone in mind, but designed so that it would be easy to port to a wider variety of phones.","spit.php","assets/images/computer-works/spit_icon.jpg",true);
