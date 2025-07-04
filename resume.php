@@ -102,8 +102,10 @@ head_content("Resume","");
 			</div>
 		</div>
 	</div>
-	<h4 class="no-transform">Game and Application Development | Workflow Performance Improvement</h4>
-	<p>Programmer specializing in digital and traditional art, skilled in developing games and applications to increase efficiency and enhance learning. Thrives on understanding how things work, optimizing processes, and educating others. Experienced with diverse programming languages, development environments, and software tools. Adept at solving challenges and delivering innovative solutions.</p>
+	<h4 class="no-transform">Remote Full-Stack Developer | PHP, JavaScript, Unity (WebGL) | EdTech & Game Dev | OAuth2, Web APIs</h4>
+	<p>Passionate about crafting immersive learning experiences and building clean, efficient systems — from back-end APIs (PHP, SlimAPI, OAuth2) to interactive front-ends (JavaScript, Unity, WebGL).</p>
+	<p>A patent-holding innovator and remote-ready leader with deep experience in FERPA/COPPA compliance, development pipeline optimization, and cross-platform architecture.</p>
+	<p>Looking for a full-time remote opportunity in games or edtech, to apply my skills to help teams education, interactivity, and web tech.</p>
 	<h4>Skills</h4>
 <?php
 $skillItems = array (
