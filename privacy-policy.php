@@ -23,6 +23,6 @@ head_content($pageTitle,"");
 			<p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the date of the latest revision will be indicated at the top. It is your responsibility to review this Privacy Policy periodically. But honestly, the rate that this site gets updated, there isn't a whole lot of changes!</p>
 
 			<h3>Contact Us:</h3>
-			<p>If you have any questions or concerns about our privacy practices, please contact us at using the <a href="contact.php"/>contact form</p>
+			<p>If you have any questions or concerns about our privacy practices, please contact us at using the <a href="contact"/>contact form</p>
 		</div>
 <?php end_content(); ?>

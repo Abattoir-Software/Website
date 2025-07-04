@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE clickablemaparticles [
+	<!ELEMENT clickablemaparticles (region*) >
+	<!ELEMENT region (article*) >
+	<!ATTLIST region area CDATA #REQUIRED>
+	<!ELEMENT article ( title, date?, blurb, story, link )>
+	<!ELEMENT date (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT blurb (#PCDATA)>
+	<!ELEMENT story (#PCDATA)>
+	<!ELEMENT link (#PCDATA)>
+]>
+<clickablemaparticles>	
+	<region area="northeast">
+		<article>
+			<title>The Top Most Article of the North East!</title>
+			<date>December 3, 2008</date>
+			<blurb>Top most article</blurb>
+			<!-- Make sure you include the <![CDATA  and ]]> tags to properly display the HTML -->
+			<story><![CDATA[
+Top most article <b>shows entire story</b>, other ones only the blurb. <i>Lorem ipsum dolor sit</i> amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. <a href="http://www.google.com" target="_blank" >Click here for Google</a>, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+<li>One</li><li>two</li><li>three</li> Morbi fringilla lobortis turpis. Phasellus ligula lectus, cursus vitae, varius in, eleifend ac, mauris. Etiam varius tortor at est congue commodo. Donec ultricies felis quis velit. Phasellus faucibus pede quis purus. Donec ac pede eu mi dictum convallis. Morbi fermentum. Vestibulum eget est et augue congue mollis. Maecenas sit amet leo eget lacus ultricies commodo. Proin ullamcorper sem sed nulla. Nunc vitae leo. In tempor fermentum nulla. Donec egestas, sem elementum commodo accumsan, tortor justo porta nulla, et condimentum ipsum orci quis lectus. 
+			]]></story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Business is Booming</title>
+			<date>November 30, 2008</date>
+			<blurb>Black Friday, Cyber Monday, expect to be big hits!</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Gold Prices expected to go Down</title>
+			<date>November 30, 2008</date>
+			<blurb>Huge gold view threatens prices.</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>		
+	</region>
+	<region area="northwest">
+		<article>
+			<title>The Top Most Article of the North West!</title>
+			<date>December 2, 2008</date>
+			<blurb>Top most article</blurb>
+			<story>
+Top most article shows entire story, other ones only the blurb. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Morbi fringilla lobortis turpis. Phasellus ligula lectus, cursus vitae, varius in, eleifend ac, mauris. Etiam varius tortor at est congue commodo. Donec ultricies felis quis velit. Phasellus faucibus pede quis purus. Donec ac pede eu mi dictum convallis. Morbi fermentum. Vestibulum eget est et augue congue mollis. Maecenas sit amet leo eget lacus ultricies commodo. Proin ullamcorper sem sed nulla. Nunc vitae leo. In tempor fermentum nulla. Donec egestas, sem elementum commodo accumsan, tortor justo porta nulla, et condimentum ipsum orci quis lectus. 
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Fridged Weather Affect Food Prices</title>
+			<date>November 28, 2008</date>
+			<blurb>Cold spell kill acres of crops.</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Alaska to Begin Drilling</title>
+			<date>November 15, 2008</date>
+			<blurb>Alaska plans to begin drilling soon.</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>		
+	</region>
+	<region area="midwest">
+		<article>
+			<title>The Top Most Article of the Midwest!</title>
+			<date>December 1, 2008</date>
+			<blurb>Top most article</blurb>
+			<story>
+Top most article shows entire story, other ones only the blurb. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Morbi fringilla lobortis turpis. Phasellus ligula lectus, cursus vitae, varius in, eleifend ac, mauris. Etiam varius tortor at est congue commodo. Donec ultricies felis quis velit. Phasellus faucibus pede quis purus. Donec ac pede eu mi dictum convallis. Morbi fermentum. Vestibulum eget est et augue congue mollis. Maecenas sit amet leo eget lacus ultricies commodo. Proin ullamcorper sem sed nulla. Nunc vitae leo. In tempor fermentum nulla. Donec egestas, sem elementum commodo accumsan, tortor justo porta nulla, et condimentum ipsum orci quis lectus. 
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Michigan Hope In Hydrogen</title>
+			<date>November 28, 2008</date>
+			<blurb>Hydrogen cars my revitalize car manufactures!</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Dakotas look for Government Aide</title>
+			<date>November 20, 2008</date>
+			<blurb>Dakotas are looking for $150M grant to repair damages.</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>		
+	</region>
+	<region area="south">
+		<article>
+			<title>The Top Most Article of the South!</title>
+			<date>December 2, 2008</date>
+			<blurb>Top most article</blurb>
+			<story>
+Top most article shows entire story, other ones only the blurb. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Morbi fringilla lobortis turpis. Phasellus ligula lectus, cursus vitae, varius in, eleifend ac, mauris. Etiam varius tortor at est congue commodo. Donec ultricies felis quis velit. Phasellus faucibus pede quis purus. Donec ac pede eu mi dictum convallis. Morbi fermentum. Vestibulum eget est et augue congue mollis. Maecenas sit amet leo eget lacus ultricies commodo. Proin ullamcorper sem sed nulla. Nunc vitae leo. In tempor fermentum nulla. Donec egestas, sem elementum commodo accumsan, tortor justo porta nulla, et condimentum ipsum orci quis lectus. 
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Corn Demands High</title>
+			<date>November 29, 2008</date>
+			<blurb>Food or fuel?</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Texas CEO in Scandal</title>
+			<date>November 29, 2008</date>
+			<blurb>Texas company's CEO under investigation.</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>		
+	</region>
+	<region area="southwest">
+		<article>
+			<title>The Top Most Article of the South West!</title>
+			<date>December 1, 2008</date>
+			<blurb>Top most article</blurb>
+			<story>
+Top most article shows entire story, other ones only the blurb. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Morbi fringilla lobortis turpis. Phasellus ligula lectus, cursus vitae, varius in, eleifend ac, mauris. Etiam varius tortor at est congue commodo. Donec ultricies felis quis velit. Phasellus faucibus pede quis purus. Donec ac pede eu mi dictum convallis. Morbi fermentum. Vestibulum eget est et augue congue mollis. Maecenas sit amet leo eget lacus ultricies commodo. Proin ullamcorper sem sed nulla. Nunc vitae leo. In tempor fermentum nulla. Donec egestas, sem elementum commodo accumsan, tortor justo porta nulla, et condimentum ipsum orci quis lectus. 
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>California's Governator Terminates Small Business Funding</title>
+			<date>November 28, 2008</date>
+			<blurb>Small Business may need to look elsewhere for funding</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>
+		<article>
+			<title>Hawaii Finds Diamond</title>
+			<date>November 20, 2008</date>
+			<blurb>New dimond mine expected to generate $1B!</blurb>
+			<story>
+This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+			</story>
+			<link>http://www.google.com</link>
+		</article>		
+
+	</region>
+</clickablemaparticles>

@@ -1,0 +1,23 @@
+
+CheckBox
+{
+	disabledIcon: Embed(source="../assets/skins/CheckBox_disabledIcon.png");
+	downIcon: Embed(source="../assets/skins/CheckBox_downIcon.png");
+	overIcon: Embed(source="../assets/skins/CheckBox_overIcon.png");
+	selectedDisabledIcon: Embed(source="../assets/skins/CheckBox_selectedDisabledIcon.png");
+	selectedDownIcon: Embed(source="../assets/skins/CheckBox_selectedDownIcon.png");
+	selectedOverIcon: Embed(source="../assets/skins/CheckBox_selectedOverIcon.png");
+	selectedUpIcon: Embed(source="../assets/skins/CheckBox_selectedUpIcon.png");
+	upIcon: Embed(source="../assets/skins/CheckBox_upIcon.png");
+}
+RadioButton
+{
+	disabledIcon: Embed(source="../assets/skins/RadioButton_disabledIcon.png");
+	downIcon: Embed(source="../assets/skins/RadioButton_downIcon.png");
+	overIcon: Embed(source="../assets/skins/RadioButton_overIcon.png");
+	selectedDisabledIcon: Embed(source="../assets/skins/RadioButton_selectedDisabledIcon.png");
+	selectedDownIcon: Embed(source="../assets/skins/RadioButton_selectedDownIcon.png");
+	selectedOverIcon: Embed(source="../assets/skins/RadioButton_selectedOverIcon.png");
+	selectedUpIcon: Embed(source="../assets/skins/RadioButton_selectedUpIcon.png");
+	upIcon: Embed(source="../assets/skins/RadioButton_upIcon.png");
+}

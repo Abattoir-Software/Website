@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!DOCTYPE innovatisproductfinderdata [
+	<!ELEMENT innovatisproductfinderdata ( displaydata, productdata ) >
+	<!ELEMENT displaydata (applications, culturesystems) >
+	<!ELEMENT applications ( element* ) >
+	<!ELEMENT culturesystems ( element* ) >
+	<!ELEMENT element EMPTY >
+		<!ATTLIST element name CDATA #REQUIRED >
+		<!ATTLIST element research CDATA #REQUIRED >
+		<!ATTLIST element development CDATA #REQUIRED >
+		<!ATTLIST element production CDATA #REQUIRED >
+	<!ELEMENT productdata ( product* ) >
+	<!ELEMENT product ( applications*, culturesystems* ) >
+		<!ATTLIST product name CDATA #REQUIRED >
+		<!ATTLIST product link CDATA #REQUIRED >
+		<!ATTLIST product image CDATA #REQUIRED >
+		<!ATTLIST product over CDATA #REQUIRED >
+		<!ATTLIST product description CDATA #REQUIRED >
+	<!ELEMENT description (#PCDATA) >
+]> 
+<innovatisproductfinderdata>
+	<displaydata>
+		<applications>
+			<!-- Value of 1 means to display in that field, 0 means do not show. -->
+			<element name="Mammalian Cell Density"             research="1" development="1" production="1" />
+			<element name="Plant Cell Density"                 research="1" development="1" production="1" />
+			<element name="Yeast Density"                      research="1" development="1" production="1" />
+			<element name="Bacteria Density"                   research="1" development="1" production="1" />
+			<element name="Mammalian Cell Viability"           research="1" development="1" production="1" />
+			<element name="Yeast Viability"                    research="1" development="1" production="1" />
+			<element name="Diameter measurement"               research="1" development="1" production="1" />
+			<element name="Aggregation measurement"            research="1" development="1" production="1" />
+			<element name="Confluency measurement"             research="1" development="1" production="0" />
+			<!-- Divider in listing -->
+			<element name="Cloning assay / Colony detection"   research="1" development="1" production="0" />
+			<element name="Fluorescence"                       research="1" development="0" production="0" />
+			<element name="Culture media ingredients"          research="0" development="1" production="1" />
+			<element name="Substrate concentration"            research="0" development="1" production="1" />
+			<element name="Metabolite concentration"           research="0" development="1" production="1" />
+			<element name="Ion concentration"                  research="0" development="1" production="1" />
+			<element name="Antibody (IgG) concentration"       research="0" development="1" production="1" />
+			<element name="Protein concentration"              research="1" development="1" production="1" />
+			<element name="Cell line optimization"             research="1" development="1" production="0" />
+			<element name="Toxicity studies"                   research="1" development="0" production="0" />
+			<element name="Infection monitoring (Baculovirus)" research="1" development="1" production="0" />
+			<element name="Stem cells applications"            research="1" development="0" production="0" />
+			<element name="Remote control/online monitoring"   research="1" development="1" production="1" />
+			<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="1" production="1" />
+			<element name="Automation integration"             research="1" development="1" production="1" />
+			<element name="System Suitability Test"            research="0" development="1" production="1" />				
+		</applications>
+		<culturesystems>
+			<!-- Value of 1 means to display in that field, 0 means do not show. -->
+			<element name="24 – 384 well plates"               research="1" development="0" production="0" />
+			<element name="6 + 12 well plates"                 research="1" development="0" production="0" />
+			<element name="T-75 flask"                         research="1" development="1" production="0" />
+			<element name="T-175 / 225 flask"                  research="1" development="1" production="0" />
+			<element name="Shaker flask / roller bottles"      research="1" development="1" production="0" />
+			<element name="Small bioreactor"                   research="0" development="1" production="1" />
+			<element name="Large bioreactor"                   research="0" development="1" production="1" />
+			<element name="Single use bioreactor"              research="0" development="0" production="1" />
+		</culturesystems>
+	</displaydata>
+
+	<!-- Application Values 0=not suitable  1=suitable  2=especially suitable  3=Only if "Remote control/online monitoring" is not selected -->
+	<productdata>	
+		<product name="Cedex XS" link="http://www.innovatis.com/products_cedex-xs" image="images/Cedex_XS.png" over="images/Cedex_XS_over.png" description="The industry standard for automated cell culture analysis based on the Trypan Blue Exclusion Method. Accurately determines cell density, cell viability and additional cell specific parameters.">
+			<applications>
+				<element name="Mammalian Cell Density"             research="2" development="2" production="2" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="0" development="0" production="0" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="2" development="2" production="2" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="2" development="2" production="2" />
+				<element name="Aggregation measurement"            research="2" development="2" production="2" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="0" production="2" />
+				<element name="Automation integration"             research="0" development="2" production="0" />
+				<element name="System Suitability Test"            research="0" development="2" production="0" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="2" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="2" production="2" />
+				<element name="Large bioreactor"                   research="0" development="2" production="2" />
+				<element name="Single use bioreactor"              research="0" development="0" production="0" />
+			</culturesystems>
+		</product>
+		<product name="Cedex" link="http://www.innovatis.com/products_cedex" image="images/Cedex.png" over="images/Cedex_over.png" description="The industry standard for automated cell culture analysis based on the Trypan Blue Exclusion Method. Accurately determines cell density, cell viability and additional cell specific parameters.">
+			<applications>
+				<element name="Mammalian Cell Density"             research="2" development="2" production="2" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="0" development="0" production="0" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="2" development="2" production="2" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="2" development="2" production="2" />
+				<element name="Aggregation measurement"            research="2" development="2" production="2" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="2" development="2" production="2" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="2" production="2" />
+				<element name="Automation integration"             research="0" development="2" production="2" />
+				<element name="System Suitability Test"            research="0" development="2" production="2" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="0" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="2" production="2" />
+				<element name="Large bioreactor"                   research="0" development="2" production="2" />
+				<element name="Single use bioreactor"              research="0" development="0" production="3" />
+			</culturesystems>
+		</product>
+		<product name="Cedex HiRes" link="http://www.innovatis.com/products_cedex-hires" image="images/Cedex_HiRes.png" over="images/Cedex_HiRes_over.png" description="The next generation in automated cell culture analysis systems based on the Trypan Blue Exclusion Method. Advanced imaging technology for wider ranges and easier operation.">
+			<applications>
+				<element name="Mammalian Cell Density"             research="2" development="2" production="2" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="0" development="0" production="0" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="2" development="2" production="2" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="2" development="2" production="2" />
+				<element name="Aggregation measurement"            research="2" development="2" production="2" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="2" development="2" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="2" development="2" production="2" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="2" production="2" />
+				<element name="Automation integration"             research="0" development="2" production="2" />
+				<element name="System Suitability Test"            research="0" development="2" production="2" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="2" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="2" production="2" />
+				<element name="Large bioreactor"                   research="0" development="2" production="2" />
+				<element name="Single use bioreactor"              research="0" development="0" production="3" />
+			</culturesystems>
+		</product>
+		<product name="Cedex Yeast" link="http://www.innovatis.com/products_cedex-yeast" image="images/Cedex_Yeast.png" over="images/Cedex_Yeast_over.png" description="Automated analysis of yeast cultures for research and production applications. Analyze cell concentration, viability and morphology at a glance.">
+			<applications>
+				<element name="Mammalian Cell Density"             research="0" development="0" production="0" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="2" development="2" production="2" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="0" development="0" production="0" />
+				<element name="Yeast Viability"                    research="2" development="2" production="2" />
+				<element name="Diameter measurement"               research="2" development="2" production="2" />
+				<element name="Aggregation measurement"            research="2" development="2" production="2" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="0" production="0" />
+				<element name="Automation integration"             research="0" development="0" production="0" />
+				<element name="System Suitability Test"            research="0" development="0" production="0" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="2" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="2" production="2" />
+				<element name="Large bioreactor"                   research="0" development="2" production="2" />
+				<element name="Single use bioreactor"              research="0" development="0" production="0" />
+			</culturesystems>
+		</product>
+		<product name="CASY DT" link="http://www.casy-technology.com/" image="images/Casy_DT.png" over="images/Casy_DT_over.png" description="Fast, easy and non-invasive analyzer for determining cell count and viability">
+			<applications>
+				<element name="Mammalian Cell Density"             research="2" development="2" production="0" />
+				<element name="Plant Cell Density"                 research="2" development="2" production="0" />
+				<element name="Yeast Density"                      research="2" development="2" production="0" />
+				<element name="Bacteria Density"                   research="2" development="2" production="0" />
+				<element name="Mammalian Cell Viability"           research="2" development="1" production="0" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="0" development="0" production="0" />
+				<element name="Aggregation measurement"            research="0" development="0" production="0" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="0" production="0" />
+				<element name="Automation integration"             research="0" development="0" production="0" />
+				<element name="System Suitability Test"            research="0" development="0" production="0" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="2" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="1" production="0" />
+				<element name="Large bioreactor"                   research="0" development="1" production="0" />
+				<element name="Single use bioreactor"              research="0" development="0" production="0" />
+			</culturesystems>
+		</product>
+		<product name="CASY TT" link="http://www.casy-technology.com/" image="images/Casy_TT.png" over="images/Casy_TT_over.png" description="The electronic cell counter for determining cell count, cell volume, aggregation and vitality">
+			<applications>
+				<element name="Mammalian Cell Density"             research="2" development="2" production="2" />
+				<element name="Plant Cell Density"                 research="2" development="2" production="2" />
+				<element name="Yeast Density"                      research="2" development="2" production="2" />
+				<element name="Bacteria Density"                   research="2" development="2" production="2" />
+				<element name="Mammalian Cell Viability"           research="2" development="2" production="2" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="2" development="2" production="2" />
+				<element name="Aggregation measurement"            research="2" development="2" production="2" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="2" development="2" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="0" production="0" />
+				<element name="Automation integration"             research="0" development="0" production="0" />
+				<element name="System Suitability Test"            research="0" development="0" production="0" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="2" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="1" production="1" />
+				<element name="Large bioreactor"                   research="0" development="1" production="1" />
+				<element name="Single use bioreactor"              research="0" development="0" production="0" />
+			</culturesystems>
+		</product>
+		<product name="CASY TTC" link="http://www.casy-technology.com/" image="images/Casy_TTC.png" over="images/Casy_TTC_over.png" description="Total quality control enabled cell analysis for compliance with GLP and GMP regulations">
+			<applications>
+				<element name="Mammalian Cell Density"             research="2" development="2" production="2" />
+				<element name="Plant Cell Density"                 research="2" development="2" production="2" />
+				<element name="Yeast Density"                      research="2" development="2" production="2" />
+				<element name="Bacteria Density"                   research="2" development="2" production="2" />
+				<element name="Mammalian Cell Viability"           research="2" development="2" production="2" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="2" development="2" production="2" />
+				<element name="Aggregation measurement"            research="2" development="2" production="2" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="2" development="2" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="2" production="2" />
+				<element name="Automation integration"             research="0" development="0" production="0" />
+				<element name="System Suitability Test"            research="0" development="0" production="0" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="2" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="1" production="1" />
+				<element name="Large bioreactor"                   research="0" development="1" production="1" />
+				<element name="Single use bioreactor"              research="0" development="0" production="0" />
+			</culturesystems>
+		</product>
+		<product name="Cellavista" link="http://www.innovatis.com/products_cellavista" image="images/Cellavista.png" over="images/Cellavista_over.png" description="Fast, automated imaging instrument that performs cellular assays using both brightfield and fluorescence capabilities">
+			<applications>
+				<element name="Mammalian Cell Density"             research="2" development="2" production="0" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="2" development="2" production="0" />
+				<element name="Bacteria Density"                   research="2" development="2" production="0" />
+				<element name="Mammalian Cell Viability"           research="2" development="2" production="0" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="2" development="2" production="0" />
+				<element name="Aggregation measurement"            research="0" development="0" production="0" />
+				<element name="Confluency measurement"             research="2" development="2" production="0" />
+				<element name="Cloning assay / Colony detection"   research="2" development="2" production="0" />
+				<element name="Fluorescence"                       research="2" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="2" development="0" production="0" />
+				<element name="Cell line optimization"             research="2" development="2" production="0" />
+				<element name="Toxicity studies"                   research="2" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="2" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="0" production="0" />
+				<element name="Automation integration"             research="2" development="2" production="0" />
+				<element name="System Suitability Test"            research="0" development="0" production="0" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="2" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="2" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="0" development="0" production="0" />
+				<element name="Shaker flask / roller bottles"      research="0" development="0" production="0" />
+				<element name="Small bioreactor"                   research="0" development="0" production="0" />
+				<element name="Large bioreactor"                   research="0" development="0" production="0" />
+				<element name="Single use bioreactor"              research="0" development="0" production="0" />
+			</culturesystems>
+		</product>
+		<product name="CuBiAn XC" link="http://www.innovatis.com/products_cubian-xc" image="images/Cubian_XC.png" over="images/Cubian_XC_over.png" description="A compact, semi automated benchtop biochemistry analyzer for measuring cell culture conditions using the photometric measurement principle">
+			<applications>
+				<element name="Mammalian Cell Density"             research="0" development="0" production="0" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="0" development="0" production="0" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="0" development="0" production="0" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="0" development="0" production="0" />
+				<element name="Aggregation measurement"            research="0" development="0" production="0" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="2" production="2" />
+				<element name="Substrate concentration"            research="0" development="2" production="2" />
+				<element name="Metabolite concentration"           research="0" development="2" production="2" />
+				<element name="Ion concentration"                  research="0" development="2" production="2" />
+				<element name="Antibody (IgG) concentration"       research="0" development="2" production="2" />
+				<element name="Protein concentration"              research="0" development="2" production="2" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="2" production="2" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="2" production="2" />
+				<element name="Automation integration"             research="0" development="2" production="2" />
+				<element name="System Suitability Test"            research="0" development="2" production="2" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="0" development="0" production="0" />
+				<element name="T-75 flask"                         research="0" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="0" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="0" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="2" production="2" />
+				<element name="Large bioreactor"                   research="0" development="2" production="2" />
+				<element name="Single use bioreactor"              research="0" development="0" production="3" />
+			</culturesystems>
+		</product>
+		<product name="CuBiAn FA" link="" image="images/Cubian_FA.png" over="images/Cubian_FA_over.png" description="A compact, semi automated benchtop biochemistry analyzer for measuring cell culture conditions using the photometric measurement principle">
+			<applications>
+				<element name="Mammalian Cell Density"             research="0" development="0" production="0" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="0" development="0" production="0" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="0" development="0" production="0" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="0" development="0" production="0" />
+				<element name="Aggregation measurement"            research="0" development="0" production="0" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="2" production="2" />
+				<element name="Substrate concentration"            research="0" development="2" production="2" />
+				<element name="Metabolite concentration"           research="0" development="2" production="2" />
+				<element name="Ion concentration"                  research="0" development="2" production="2" />
+				<element name="Antibody (IgG) concentration"       research="0" development="2" production="2" />
+				<element name="Protein concentration"              research="0" development="2" production="2" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="2" development="2" production="2" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="2" production="2" />
+				<element name="Automation integration"             research="0" development="2" production="2" />
+				<element name="System Suitability Test"            research="0" development="2" production="2" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="0" development="0" production="0" />
+				<element name="T-75 flask"                         research="2" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="2" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="2" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="2" production="2" />
+				<element name="Large bioreactor"                   research="0" development="2" production="2" />
+				<element name="Single use bioreactor"              research="0" development="0" production="3" />
+			</culturesystems>
+		</product>		
+		<product name="CuBiAn HT" link="http://www.innovatis.com/products_cubian-ht" image="images/Cubian_HT.png" over="images/Cubian_HT_over.png" description="High throughput, membrane free analysis of cell culture conditions for process development and production applications">
+			<applications>
+				<element name="Mammalian Cell Density"             research="0" development="0" production="0" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="0" development="0" production="0" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="0" development="0" production="0" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="0" development="0" production="0" />
+				<element name="Aggregation measurement"            research="0" development="0" production="0" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="2" production="2" />
+				<element name="Substrate concentration"            research="0" development="2" production="2" />
+				<element name="Metabolite concentration"           research="0" development="2" production="2" />
+				<element name="Ion concentration"                  research="0" development="2" production="2" />
+				<element name="Antibody (IgG) concentration"       research="0" development="2" production="2" />
+				<element name="Protein concentration"              research="0" development="2" production="2" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="0" production="0" />
+				<element name="Automation integration"             research="0" development="0" production="0" />
+				<element name="System Suitability Test"            research="0" development="2" production="2" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="0" development="0" production="0" />
+				<element name="T-75 flask"                         research="0" development="2" production="0" />
+				<element name="T-175 / 225 flask"                  research="0" development="2" production="0" />
+				<element name="Shaker flask / roller bottles"      research="0" development="2" production="0" />
+				<element name="Small bioreactor"                   research="0" development="2" production="2" />
+				<element name="Large bioreactor"                   research="0" development="2" production="2" />
+				<element name="Single use bioreactor"              research="0" development="0" production="3" />
+			</culturesystems>
+		</product>
+<!-- EMPTY Product Sample
+		<product name="name" link="link goes here" image="image goes here" over="rolled over image goes here" description="mouse over text here">
+			<applications>
+				<element name="Mammalian Cell Density"             research="0" development="0" production="0" />
+				<element name="Plant Cell Density"                 research="0" development="0" production="0" />
+				<element name="Yeast Density"                      research="0" development="0" production="0" />
+				<element name="Bacteria Density"                   research="0" development="0" production="0" />
+				<element name="Mammalian Cell Viability"           research="0" development="0" production="0" />
+				<element name="Yeast Viability"                    research="0" development="0" production="0" />
+				<element name="Diameter measurement"               research="0" development="0" production="0" />
+				<element name="Aggregation measurement"            research="0" development="0" production="0" />
+				<element name="Confluency measurement"             research="0" development="0" production="0" />
+				<element name="Cloning assay / Colony detection"   research="0" development="0" production="0" />
+				<element name="Fluorescence"                       research="0" development="0" production="0" />
+				<element name="Culture media ingredients"          research="0" development="0" production="0" />
+				<element name="Substrate concentration"            research="0" development="0" production="0" />
+				<element name="Metabolite concentration"           research="0" development="0" production="0" />
+				<element name="Ion concentration"                  research="0" development="0" production="0" />
+				<element name="Antibody (IgG) concentration"       research="0" development="0" production="0" />
+				<element name="Protein concentration"              research="0" development="0" production="0" />
+				<element name="Cell line optimization"             research="0" development="0" production="0" />
+				<element name="Toxicity studies"                   research="0" development="0" production="0" />
+				<element name="Infection monitoring (Baculovirus)" research="0" development="0" production="0" />
+				<element name="Stem cells applications"            research="0" development="0" production="0" />
+				<element name="Remote control/online monitoring"   research="0" development="0" production="0" />
+				<element name="GMP/CFR 21 Part 11 compliance"      research="0" development="0" production="0" />
+				<element name="Automation integration"             research="0" development="0" production="0" />
+				<element name="System Suitability Test"            research="0" development="0" production="0" />				
+			</applications>
+			<culturesystems>
+				<element name="24 – 384 well plates"               research="0" development="0" production="0" />
+				<element name="6 + 12 well plates"                 research="0" development="0" production="0" />
+				<element name="T-75 flask"                         research="0" development="0" production="0" />
+				<element name="T-175 / 225 flask"                  research="0" development="0" production="0" />
+				<element name="Shaker flask / roller bottles"      research="0" development="0" production="0" />
+				<element name="Small bioreactor"                   research="0" development="0" production="0" />
+				<element name="Large bioreactor"                   research="0" development="0" production="0" />
+				<element name="Single use bioreactor"              research="0" development="0" production="0" />
+			</culturesystems>
+		</product>		
+-->
+		
+	</productdata>
+
+</innovatisproductfinderdata>

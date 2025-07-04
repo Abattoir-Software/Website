@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE clickablemaparticles [
+	<!ELEMENT clickablemaparticles (article*) >
+	<!ELEMENT article ( title, date?, blurb, story )>
+	<!ELEMENT date (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT blurb (#PCDATA)>
+	<!ELEMENT story (#PCDATA)>
+]>
+<clickablemaparticles>	
+	<article>
+		<title>Chapter 2 - The Top Most Article of the North East!</title>
+		<date>December 3, 2008</date>
+		<blurb>Top most article with information about HTML formatting info.</blurb>
+		<!-- Make sure you include the <![CDATA  and ]]> tags to properly display the HTML -->
+		<story><![CDATA[
+Top most article <b>BOLD TEXT can be enter using standard HTML tags</b>, also <i>ITALICS also works as HTML tags</i> <a href="http://www.google.com" target="_blank" >LINKS also work as HTML text</a> <br> <li>Only unnumbered bullets!!</li><li>It's a limitiation of Flash/Flex HTML Engine</li><li>But, you can at least have bullets</li> Morbi fringilla lobortis turpis. </li> <br>
+amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+
+Donec tincidunt posuere nisl. , purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Phasellus ligula lectus, cursus vitae, varius in, eleifend ac, mauris. Etiam varius tortor at est congue commodo. Donec ultricies felis quis velit. Phasellus faucibus pede quis purus. Donec ac pede eu mi dictum convallis. Morbi fermentum. Vestibulum eget est et augue congue mollis. Maecenas sit amet leo eget lacus ultricies commodo. Proin ullamcorper sem sed nulla. Nunc vitae leo. In tempor fermentum nulla. Donec egestas, sem elementum commodo accumsan, tortor justo porta nulla, et condimentum ipsum orci quis lectus. 
+		]]></story>
+	</article>
+	<article>
+		<title>Business is Booming</title>
+		<date>November 30, 2008</date>
+		<blurb>Black Friday, Cyber Monday, expect to be big hits!</blurb>
+		<story>
+			This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+			
+			Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+		</story>
+	</article>
+	<article>
+		<title>Gold Prices expected to go Down</title>
+		<date>November 30, 2008</date>
+		<blurb>Huge gold view threatens prices.</blurb>
+		<story>
+			This would show up if it was the top-most article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur non dolor elementum augue mollis rhoncus. Sed varius consequat erat. Proin accumsan tincidunt nulla. Aliquam ac orci. Pellentesque ac arcu a felis ornare blandit. Phasellus convallis pede a ipsum. Aliquam erat volutpat. Maecenas sed nisi. Donec porta mi eget libero. Donec erat purus, molestie ut, ornare et, egestas sit amet, metus. Nulla massa. Aliquam erat volutpat. Proin lorem. Vestibulum at sapien. Nullam et tellus non nibh eleifend sodales. Integer pede ipsum, sodales eu, aliquam vel, rutrum sed, justo.
+			
+			Donec tincidunt posuere nisl. Vestibulum malesuada, purus at lacinia lobortis, ipsum turpis feugiat neque, vitae tincidunt sem nulla quis massa. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer pharetra semper diam. Praesent id lacus. Morbi sollicitudin. Praesent pellentesque nisi non sem. Fusce nec odio. Sed dolor eros, laoreet vitae, tempor id, vestibulum ac, augue. Integer id erat vel neque faucibus mattis. Aliquam ut tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum commodo. Praesent suscipit. Donec lacinia. Proin scelerisque erat vitae metus. Aliquam consectetuer. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.			
+		</story>
+	</article>		
+</clickablemaparticles>

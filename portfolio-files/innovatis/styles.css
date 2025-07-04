@@ -1,0 +1,121 @@
+/* CSS file */
+
+	     @font-face {
+	        src:url("../assets/fonts/Helvetica Neue LT Std/HelveticaNeueLTStd-Bd.otf");
+	        fontFamily: HelveticaNeueBoldEmbedded;
+	        fontWeight: bold;
+	        advancedAntiAliasing: true;
+	        unicodeRange:
+				U+0041-U+005A, /* Upper-Case [A..Z] */
+				U+0061-U+007A, /* Lower-Case a-z */
+				U+0030-U+0039, /* Numbers [0..9] */
+				U+0020-U+002F, /* Punctuation */
+				U+003A-U+0040, /* Punctuation */
+				U+005B-U+0060, /* Punctuation */
+				U+007B-U+007E; /* Punctuation */
+	     }
+
+	     @font-face {
+	        src:url("../assets/fonts/Helvetica Neue LT Std/HelveticaNeueLTStd-Lt.otf");
+	        fontFamily: HelveticaNeueLightEmbedded;
+	        fontWeight: light;
+	        advancedAntiAliasing: true;
+	        unicodeRange:
+				U+0041-U+005A, /* Upper-Case [A..Z] */
+				U+0061-U+007A, /* Lower-Case a-z */
+				U+0030-U+0039, /* Numbers [0..9] */
+				U+0020-U+002F, /* Punctuation */
+				U+003A-U+0040, /* Punctuation */
+				U+005B-U+0060, /* Punctuation */
+				U+007B-U+007E; /* Punctuation */
+	     }
+
+	     @font-face {
+	        src:url("../assets/fonts/Futura Std/FuturaStd-Medium.otf");
+	        fontFamily: FuturaMediumEmbedded;
+	        fontWeight: normal;
+	        advancedAntiAliasing: true;
+	        unicodeRange:
+				U+0041-U+005A, /* Upper-Case [A..Z] */
+				U+0061-U+007A, /* Lower-Case a-z */
+				U+0030-U+0039, /* Numbers [0..9] */
+				U+0020-U+002F, /* Punctuation */
+				U+003A-U+0040, /* Punctuation */
+				U+005B-U+0060, /* Punctuation */
+				U+007B-U+007E; /* Punctuation */
+	     }
+	     
+	     .bluebkg {
+	     	background-image: Embed(source='../assets/bluebkg.png');
+	     	background-repeat: true;
+	     }
+	     
+	     /** @note When defining CSS styles, besure to include fontWeight in all styles, otherwise, it may default! */
+	     .loadingWindow {
+	     	fontFamily: FuturaMediumEmbedded;
+	     	fontSize: 15;
+	     	fontWeight: normal;
+	     	color: #000000;	     	
+	     }
+	     
+	     .productNames {
+	     	fontFamily: HelveticaNeueBoldEmbedded;
+	     	fontSize: 14;
+	     	fontWeight: bold;
+	     	color: #000000;
+	     }
+
+		.fields {
+	     	fontFamily: FuturaMediumEmbedded;
+	     	fontSize: 15;
+	     	fontWeight: normal;
+	     	color: #000000;
+		}
+
+	     .titles {
+	     	fontFamily: HelveticaNeueBoldEmbedded;
+	     	fontSize: 18;
+	     	fontWeight: bold;
+	     	color: #888888;
+	     }
+	     
+	     .options {
+	     	fontFamily: HelveticaNeueLightEmbedded;
+	     	fontSize: 12;
+	     	fontWeight: light;
+	     	color: #000000;
+	     }
+
+	     .optionsCount {
+	     	fontFamily: HelveticaNeueLightEmbedded;
+	     	fontSize: 10;
+	     	fontWeight: light;
+	     	color: #000000;
+	     }
+	     
+	     .matrixTitle {
+	     	fontFamily: HelveticaNeueLightEmbedded;
+	     	fontSize: 18;
+	     	fontWeight: light;
+	     	color: #666666;
+	     }
+
+		.htmlLink
+		{
+/*
+	     	fontFamily: HelveticaNeueBoldEmbedded;
+	     	fontSize: 14;
+	     	fontWeight: bold;
+	     	color: #000000;
+*/
+	     	fontFamily: FuturaMediumEmbedded;
+	     	fontSize: 18;
+	     	fontWeight: normal;
+	     	color: #000000;	     	
+	     	/*
+			color: #000030;
+			fontWeight: normal;
+			*/
+			text-decoration: underline;
+			skin: ClassReference(null);
+		}

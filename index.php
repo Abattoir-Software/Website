@@ -29,7 +29,7 @@ write_media(
 </div>
 <hr/>
 <div>
-	<h3><p><a href="blankwords.php">BlankWords</a> is available for Android&trade; on Google Play!</p></h3>
+	<h3><p><a href="blankwords">BlankWords</a> is available for Android&trade; on Google Play!</p></h3>
 	<p>BlankWords is a simple word guessing game, where you will have five chances to guess 5 five-letter words. For each guess, you will get twenty five seconds.</p>
 	<div style="text-align:center;width:230px;">
 		<img style="padding-bottom:16px;" src="assets/images/blankwords/114x114.png"><br/>
@@ -45,9 +45,9 @@ write_media(
 </div>
 <hr/>
 <?php
-write_media("Games", "Various game projects that are in different states of development.", "games.php", write_splat(3));
-write_media("Portfolio", "A listing of several recent jobs that have been worked on.", "portfolio.php", write_splat(2));
-write_media("Archive", "Various computer projects from programming, to icons, to resources for games that seem like they were created eons ago.", "archive.php", write_splat(4));
-write_media("Resume", "Current resume for Christopher Pollati, owner of Abattoir Software LLC", "resume.php", write_splat(1));
+write_media("Games", "Various game projects that are in different states of development.", "games", write_splat(3));
+write_media("Portfolio", "A listing of several recent jobs that have been worked on.", "portfolio", write_splat(2));
+write_media("Archive", "Various computer projects from programming, to icons, to resources for games that seem like they were created eons ago.", "archive", write_splat(4));
+write_media("Resume", "Current resume for Christopher Pollati, owner of Abattoir Software LLC", "resume", write_splat(1));
 end_content();
 ?>
