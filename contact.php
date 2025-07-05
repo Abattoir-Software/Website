@@ -6,7 +6,7 @@ include_once 'includes/altcha-settings.php';
 $altcha= new AltchaOrg\Altcha\Altcha($captcha_key);
 $options = new AltchaOrg\Altcha\ChallengeOptions(
 	maxNumber: 50000, // the maximum random number
-	expires: (new \DateTimeImmutable())->add(new \DateInterval('PT10S')),
+//	expires: (new \DateTimeImmutable())->add(new \DateInterval('PT10S')),
 );
 $challenge = $altcha->createChallenge($options);
 

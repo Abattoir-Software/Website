@@ -2,8 +2,11 @@
 include_once 'includes/altcha-autoload.php';
 include_once 'includes/altcha-settings.php';
 
-$referer = $_SERVER["HTTP_REFERER"];
+include_once 'includes/phpmailer-autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
+$referer = $_SERVER["HTTP_REFERER"];
 if(str_contains($referer,"abattoir-software.com/contact")) {
 	$name = strip_tags( trim( $_POST['name'] ));
 	$company = strip_tags( trim( $_POST['company'] ));
@@ -26,8 +29,8 @@ if(str_contains($referer,"abattoir-software.com/contact")) {
 	$altcha = new AltchaOrg\Altcha\Altcha($captcha_key);
 	// decode what the widget sent in base64
 	$decoded = json_decode(base64_decode($data), true);
-	// error_log("DECODED: ". print_r($decoded,true));
-	// error_log("KEY: ". $captcha_key);
+	error_log("DECODED: ". print_r($decoded,true));
+	error_log("KEY: ". $captcha_key);
 
 	if($decoded==false) {
 		error_log("FAILED TO DECODE!!");
@@ -37,13 +40,13 @@ if(str_contains($referer,"abattoir-software.com/contact")) {
 		// Verify the solution
 		$ok = $altcha->verifySolution($decoded, $captcha_key);
 
-		// if($ok===true) { error_log(" OK === True "); }
-		// if($ok==true) { error_log(" OK == True "); }
-		// if($ok===false) { error_log(" OK === False "); }
-		// if($ok==false) { error_log(" OK == False "); }
+		if($ok===true) { error_log(" OK === True "); }
+		if($ok==true) { error_log(" OK == True "); }
+		if($ok===false) { error_log(" OK === False "); }
+		if($ok==false) { error_log(" OK == False "); }
 
-		// error_log("Altch OK: [[" . $ok . "]]");
-		// error_log("OK: [[" . print_r($ok,true) . "]]");
+		error_log("Altch OK: [[" . $ok . "]]");
+		error_log("OK: [[" . print_r($ok,true) . "]]");
 		if($ok==false) {
 			$result = false;
 		}
@@ -63,13 +66,52 @@ if(str_contains($referer,"abattoir-software.com/contact")) {
 		}
 		$message .= $msg;
 
-		// Send to Contact
-		mail($send_to,"Contact Form from $name <$email>", $message, $headers);
+		// Compose message
+		$body = "Message from: $name\n";
+		$body .= "Contact Email: $email\n";
+		if ($company !== "") $body .= "Company: $company\n";
+		if ($phone !== "") $body .= "Phone: $phone\n";
+		$body .= "\n$msg";
 
-		// Send to sender
-		mail($email,"Your message to Abattoir Software has been sent","Thank you for contacting us. Your message was sent to Abattoir Software. Someone should respond within 1-2 business days. \n\n--- Copy of message ---\n\n" . $message, $headers);
+		try {
+			// Send to Contact
+			$mail = new PHPMailer(true);
+			if($_SERVER["SERVER_NAME"]!="localhost") {
+				$mail->isSMTP();
+				$mail->Host = '127.0.0.1';
+				$mail->Port = 25;
+				$mail->SMTPAuth = false;
+				$mail->SMTPAutoTLS = false;
+			}
 
-		echo "PASSED";
+			$mail->setFrom($sent_from, "Abattoir Software Contact Form");
+			$mail->addAddress($send_to);
+			$mail->addReplyTo($email);
+			$mail->Subject = "Contact Form from $name <$email>";
+			$mail->Body = $body;
+			$mail->send();
+
+			// Send copy to sender
+			$copy = new PHPMailer(true);
+			if($_SERVER["SERVER_NAME"]!="localhost") {
+				$copy->isSMTP();
+				$copy->Host = '127.0.0.1';
+				$copy->Port = 25;
+				$copy->SMTPAuth = false;
+				$copy->SMTPAutoTLS = false;
+			}
+			$copy->setFrom($sent_from, "Abattoir Software");
+			$copy->addAddress($email);
+			$copy->addReplyTo($reply_to);
+			$copy->Subject = "Your message to Abattoir Software has been sent";
+			$copy->Body = "Thank you for contacting us. Your message was sent to Abattoir Software. Someone should respond within 1-2 business days.\n\n--- Copy of message ---\n\n$body";
+			$copy->send();
+
+			echo "PASSED";
+		} catch (Exception $e) {
+			error_log("Mail error: " . $e->getMessage());
+			echo "FAILED TO SEND MAIL";
+		}
 	}
 }
 ?>
