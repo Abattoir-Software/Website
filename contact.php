@@ -1,9 +1,18 @@
 <?php
 include_once 'includes/content/media.php';
+include_once 'includes/altcha-autoload.php';
+include_once 'includes/altcha-settings.php';
+
+$altcha= new AltchaOrg\Altcha\Altcha($captcha_key);
+$options = new AltchaOrg\Altcha\ChallengeOptions(
+	maxNumber: 50000, // the maximum random number
+	expires: (new \DateTimeImmutable())->add(new \DateInterval('PT10S')),
+);
+$challenge = $altcha->createChallenge($options);
+
 $pageTitle = "Contact";
 head_content($pageTitle);
 ?>
-				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 				<p class="lead">Have a question or want further information?</p>
 				<p>Fill in the short form and we will get back to you as soon as possible.</p>
 				<br/>
@@ -54,14 +63,14 @@ head_content($pageTitle);
 								</div>
 							</div>
 							<div class="form-group" id="recaptchaArea">
-								<div class="col-sm-12">
-									<div class="g-recaptcha" data-sitekey="6LesfBUUAAAAAEf6IXSEQjr28EiUapInzOTO4Kl4" data-theme="dark" data-callback="checkRecaptchaResults" data-expired-callback="recaptchaExpired"></div>
-								</div>
+								<label for="captcha" class="form-label col-form-label-md">Are you human?</label>
+								<script async defer src="assets/scripts/altcha.min.js" type="module"></script>
+								<altcha-widget challengejson='<?php echo json_encode($challenge); ?>'></altcha-widget>
 							</div>
 							<div class="row" id="noticeArea"></div>
 							<div class="form-group">
 								<div class="col-sm-12">
-									<button id="submit" name="submitButton" type="submit" class="btn btn-default btn-info" style="display: none;">
+									<button id="submit" name="submitButton" type="submit" class="btn btn-default btn-info">
 										<i class="glyphicon glyphicon-send"> </i>&nbsp;&nbsp; Send
 									</button>
 								</div>
@@ -77,4 +86,4 @@ head_content($pageTitle);
 					16 Albatross Dr<br />
 					Howell, NJ 07731-2869<br />
 				</address>
-<?php end_content("","\t".'<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>'."\n\t".'<script src="assets/scripts/contact_form.js"></script>');?>
+<?php end_content(""."\t".'<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>'."\n\t".'<script src="assets/scripts/contact_form.js"></script>');?>
