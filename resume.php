@@ -110,7 +110,7 @@ head_content("Resume","");
 <?php
 $skillItems = array (
 	new Skills("Programming", array("PHP","Javascript","C#","Java","ActionScript 3","Python","C/C++")),
-	new Skills("Development Software", array("<i>Visual Studio Code</i>","<i>Visual Studio</i>","<i>Xcode</i>","<i>Eclipse</i>","<i>IntelliJ/Android Studio</i>","Git","<i>GitHub</i>","<i>GitLab</i>","<i>Trello</i>","<i>Slack</i>","<i>Jira</i>)")),
+	new Skills("Development Software", array("Panic <i>Nova</i>, <i>Visual Studio Code</i>","<i>Visual Studio</i>","<i>Xcode</i>","<i>Eclipse</i>","<i>IntelliJ/Android Studio</i>","Git","<i>GitHub</i>","<i>GitLab</i>","<i>Trello</i>","<i>Slack</i>","<i>Jira</i>")),
 	new Skills("Other Software",array("<i>Ubuntu</i> Linux","<i>Figma</i>","Adobe <i>Creative Cloud</i>","<i>Google Workspace</i>","Microsoft <i>Office</i>","Document Foundation's <i>LibreOffice</i>"))
 );
 
