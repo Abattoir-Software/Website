@@ -123,73 +123,78 @@ foreach ($skillItems as $skill) {
 $workExperienceItems = array(
 	new WorkExperience("KILLER SNAILS","Brooklyn, NY","Sep 2017 – Present",
 		"Director of Software Development",
-		"Develop educational games and tools for evaluating their efficacy.",
+		"",
 		array(
-			"Produced XR experiences using Unity that target Google Cardboard on iOS and Android.",
-		    "Developed systems connecting XR & websites to allow real-time monitoring of student learning.",
-		    "Integrated third-party APIs for classroom management systems."
+			"Led development of flagship educational XR products including BioDive, WaterWays, and Venom CoLab delivering WebGL, iOS, and Android versions using Unity.",
+			"Architected and maintained Linux-based server infrastructure, managing PHP, MySQL, SSL/TLS, and cloud backups using GPG encryption and DigitalOcean Spaces.",
+			"Developed a secure account management system integrating OAuth2 SSO (Google, Microsoft) with custom identity solutions, ensuring FERPA/COPPA compliance.",
+			"Produced XR experiences for Meta Quest, Google Cardboard, and WebGL platforms, optimizing cross-platform performance.",
+			"Wrote technical documentation and application architecture for grant-funded educational initiatives.",
+			"Mentored junior developers and interns in Unity best practices, server management, and deployment strategies."
 		),
 		array(
-			"BioDive (Android/iOS/WebGL), WaterWays (Android/iOS/WebGL)",
-			"U.S. Patent 11763691, <i>&quot;Method and learning system platform for extended reality digital hybrid education&quot;</i>, Sep 2023"
+			"<a href='https://www.killersnails.com/products/venom-colab' target='_blank'>BioDive</a> (Android/iOS/WebGL), " .
+			"<a href='https://www.killersnails.com/products/scuba-adventure-philippines' target='_blank'>Scuba Adventure: Phillipines</a> (Android/iOS), " .
+			"<a href='https://www.killersnails.com/products/waterways-complete' target='_blank'>WaterWays</a> (Android/iOS/WebGL), " .
+			"<a href='https://www.killersnails.com/products/venom-colab' target='_blank'>Venom CoLab</a>Venom CoLab (WebGL)",
+			"<a href='https://patents.google.com/patent/US11763691B1/en' target='_blank'>U.S. Patent 11763691</a>, <i>&quot;Method and learning system platform for extended reality digital hybrid education&quot;</i>, Sep 2023"
 		)
 	),
 
 	new WorkExperience("ABATTOIR SOFTWARE LLC","Howell, NJ","Jul 2008 – Present",
 		"Owner / Programmer",
-		"Remote contract programming and consulting services.",
+		"",
 		array(
-			"Modified Flash UIs, allowing communication with other SWFs.",
-			"Developed PHP scripts connecting Flex interfaces to MySQL databases.",
-			"Created cross-platform applications using Flex for web, desktop, and mobile"
+			"Delivered freelance and contract programming across education, entertainment, and business.",
+			"Developed cross-platform applications using Adobe Flex for web, desktop, and mobile environments.",
+			"Built PHP/MySQL back-end systems to support Flex/Flash UI integrations."
 		),
-		array( "BlankWords (Android)" )
+		array( "BlankWords</a> (Android)" )
 	),
 
 	new WorkExperience("BLOOMFIELD COLLEGE","Bloomfield, NJ","Jan 2009 – May 2022",
 		"Adjunct Professor",
-		"Taught game programming courses including Unity, XNA/C# and to ActionScript 3 for Flex, Flash and AIR to adapt to current languages and tools.",
+		"",
 		array(
-			"Led Unity classes from beginner to advanced levels, covering AI and gameplay mechanics.",
-			"Guided students in group projects simulating real-world game development workflows.",
-			"Provided insight into industry-standard software and practices."
+			"Taught undergraduate courses in game development for Unity (beginner through advanced), XNA/C#, Flex, and ActionScript 3.",
+			"Mentored student teams through full development cycles, from concept to prototype",
+			"Integrated industry-standard practices and project management methodologies into coursework."
 		)
 	),
 
 	new WorkExperience("PROPELLER COMMUNICATIONS","Summit, NJ","Jun 2016 – Sep 2017",
 		"Senior Front End Developer",
-		"Oversaw front end of web site development and iOS applications for various clients.",
+		"",
 		array(
-			"Prototyped VR walkthroughs using Unity for Samsung GearVR and Google Cardboard.",
-			"Maintained programming projects across varied technologies.",
-			"Enhanced web-based games with Phaser.io."
+			"Managed front-end web and iOS application development for major healthcare/pharma clients.",
+			"Prototyped VR walkthroughs for Samsung GearVR and Google Cardboard using Unity.",
+			"Enhanced web games using Phaser.io."
 		)
 	),
 
 	new WorkExperience("PEARSON","Hoboken, NJ","Sep 2010 – Feb 2016",
 		"Digital Developer",
-		"Designed and maintained web applications and content production tools.",
+		"",
 		array(
-			"Streamlined multimedia asset management with MySQL-integrated desktop apps.",
-			"Simplified video re-encoding and caption embedding with custom tools.",
-			"Automated static web page generation using spreadsheets and PHP scripts."
+			"Designed and maintained web applications and multimedia content tools.",
+			"Automated video processing and multimedia workflows using PHP, MySQL, and FFmpeg.",
+			"Streamlined asset management pipelines and static page generation."
 		)
 	),
 
 	new WorkExperience("KENYON HOAG ASSOCIATES","Upper Saddle River, NJ","Oct 2009 – Aug 2010",
 		"Web Developer / Programmer",
-		"Front end web development and animation focused on advertising for the pharma industry.",
+		"",
 		array(
-			"Developed Flash game demonstrating company’s knowledge of the industry.",
-			"Created tools for client websites tying their inventory and product catalogue.",
-			"Designed client websites based around corporate identities."
+			"Developed Flash-based games and client websites focused on pharma industry needs.",
+			"Integrated web inventory and catalog systems."
 		),
 		array( "Bioreactor Defender (Web)" )
 	),
 
 	new WorkExperience("THQ / KAOS STUDIOS","New York City, NY","Oct 2006 – Apr 2008",
 		"Programmer",
-		"Developed tool to help developers the PC / Xbox 360 executables and game modifications.",
+		"",
 		array(
 			"Wrote tools allowing installation and build processes to be more efficient.",
 			"Modified Unreal 3 Engine’s Kismet to be used to control Bink video playback.",
