@@ -149,7 +149,7 @@ $workExperienceItems = array(
 			"Developed cross-platform applications using Adobe Flex for web, desktop, and mobile environments.",
 			"Built PHP/MySQL back-end systems to support Flex/Flash UI integrations."
 		),
-		array( "BlankWords</a> (Android)" )
+		array( "BlankWords (Android)" )
 	),
 
 	new WorkExperience("BLOOMFIELD COLLEGE","Bloomfield, NJ","Jan 2009 – May 2022",
