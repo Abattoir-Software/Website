@@ -35,6 +35,36 @@ head_content($pageTitle,"");
 		<br clear="all"/>
 		<div>
 			<h3>Changelist:</h3>
+			<p>V1.0.10 (2024-10-26)
+				<ul>
+					<li>Updated to Android SDK 34</li>
+				</ul>
+			</p>
+			<p>V1.0.7 (2024-10-22)
+				<ul>
+					<li>Renumber due to Google Play Store</li>
+					<li>Removed reference for Vibrate to get something pushed to Google Play Store</li>
+				</ul>
+			</p>
+			<p>V1.0.6 (2024-10-22)
+				<ul>
+					<li>Updated to use Nova to make ANEs and other builds</li>
+					<li>No longer using AdMobs for anything</li>
+					<li>Updated with latest required target SDK for Google Play</li>
+				</ul>
+			</p>
+			<p>V1.0.5 (2020-07-31)
+				<ul>
+					<li>Updated with 64bit native codes for Google Play</li>
+				</ul>
+			</p>
+			<p>V1.0.4 (2019-10-31)
+				<ul>
+					<li>Updated target SDK for Google Play</li>
+					<li>Forces old versions to only use valid words</li>
+					<li>Updated copyright year</li>
+				</ul>
+			</p>
 			<p>V1.0.3 [2017-06-20]
 				<ul>
 					<li>You must enter valid words (no more entering AEIOU)!</li>
