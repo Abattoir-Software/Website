@@ -5,7 +5,7 @@ head_content($pageTitle,"");
 ?>
 		<div class="center-block" style="text-align:center;width:340px;">
 			<h3>Now available on Google Play!</h3>
-			<img style="flost:left;padding-bottom:16px;" src="assets/images/blankwords/114x114.png"><br/>
+			<img style="float:left;padding-bottom:16px;" src="assets/images/blankwords/114x114.png"><br/>
 			<div>
 				Buy BlankWords<br/>
 				<a href="https://play.google.com/store/apps/details?id=com.abattoirsoftware.BlankWords" target="_blank" style="padding:0;"><img src="assets/images/google-play-badge.png" width="215" height="83" style="width:215px;height:83px;"/></a>
@@ -85,15 +85,17 @@ head_content($pageTitle,"");
 		</div>
 
 		<br clear="all"/>
-<a data-toggle="collapse" id="historyToggle" data-target="#history" href="#history" aria-expanded="false" aria-controls="history">Click to toggle history...</a>
-			<div class="collapse" id="history" name="history">
-				<h3>History: Java project</h3>
-				<img src="assets/images/blankwords/old/blankwords-title.jpg" class="img-responsive center-block" style="padding-bottom: 15px;" alt="BlankWords title screen shot" width="640" height="456" />
-				<p><i>BlankWords</i> is a word game where you have to guess the five letter word before time runs out. Guess the word, and the letters will let you now if it is
-				in the correct place or if the letter is in the word but not in the right position.</p>
-	<?php images_captioned("assets/images/blankwords/old/blankwords-game01.jpg", "BlankWords screen shot 1", "Screen shot of <i>BlankWords</i> main game screen","assets/images/blankwords/old/blankwords-game02.jpg", "BlankWords screen shot 2","Another shot of <i>BlankWords</i>");?>
-				</p>This was created for a final project in my Java II Programming class, which required using a database to sort information of the program.  So, in about a week, I whipped up this program, which uses a Microsoft Access database to keep track of all the words in
-				the game. The database also stores information about the player, such as their real name, e-mail address, username and password. The game will also
-				keep track of the top player scores.</p>
-			</div>
+		<a data-toggle="collapse" id="historyToggle" data-target="#history" href="#history" aria-expanded="false" aria-controls="history">Click to toggle history...</a>
+		<div class="collapse" id="history" name="history">
+			<h3>History: Java project</h3>
+			<img src="assets/images/blankwords/old/blankwords-title.jpg" class="img-responsive center-block" style="padding-bottom: 15px;" alt="BlankWords title screen shot" width="640" height="456" />
+			<p><i>BlankWords</i> is a word game where you have to guess the five letter word before time runs out. Guess the word, and the letters will let you now if it is
+			in the correct place or if the letter is in the word but not in the right position.</p>
+<?php images_captioned("assets/images/blankwords/old/blankwords-game01.jpg", "BlankWords screen shot 1", "Screen shot of <i>BlankWords</i> main game screen","assets/images/blankwords/old/blankwords-game02.jpg", "BlankWords screen shot 2","Another shot of <i>BlankWords</i>");?>
+			</p>This was created for a final project in my Java II Programming class, which required using a database to sort information of the program.  So, in about a week, I whipped up this program, which uses a Microsoft Access database to keep track of all the words in
+			the game. The database also stores information about the player, such as their real name, e-mail address, username and password. The game will also
+			keep track of the top player scores.</p>
+		</div>
+		<br clear="all"/>
+</div>
 <?php end_content(); ?>
