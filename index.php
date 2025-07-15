@@ -5,7 +5,7 @@ head_content("Abattoir Software","This is the home page of Abattoir Software LLC
 <div class="panic-nova">
 	<h3><a href="https://nova.app/" target="_blank"><img src="assets/images/nova.png"> Nova</a> Extensions</h3>
 	<br/>
-	Here are the extensions for Panic's Nova IDE that I have made:
+	Here are the extensions for Panic's Nova IDE that we've built:
 <?php
 write_media(
 	"ActionScript 3",
@@ -45,9 +45,9 @@ write_media(
 </div>
 <hr/>
 <?php
-write_media("Games", "Various game projects that are in different states of development.", "games", write_splat(3));
-write_media("Portfolio", "A listing of several recent jobs that have been worked on.", "portfolio", write_splat(2));
-write_media("Archive", "Various computer projects from programming, to icons, to resources for games that seem like they were created eons ago.", "archive", write_splat(4));
-write_media("Resume", "Current resume for Christopher Pollati, owner of Abattoir Software LLC", "resume", write_splat(1));
+// write_media("Games", "Various game projects that are in different states of development.", "games", write_splat(3));
+// write_media("Portfolio", "A listing of several recent jobs that have been worked on.", "portfolio", write_splat(2));
+// write_media("Archive", "Various computer projects from programming, to icons, to resources for games that seem like they were created eons ago.", "archive", write_splat(4));
+// write_media("Resume", "Current resume for Christopher Pollati, owner of Abattoir Software LLC", "resume", write_splat(1));
 end_content();
 ?>

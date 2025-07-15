@@ -1,0 +1,82 @@
+/*
+body, h1, h2, h3, h4, h5, h6 { font-family: "eurostile", sans-serif; }
+h1 { font-family: "eurostile-extended", sans-serif; }
+.caption { font-family: "eurostile-condensed", sans-serif; }
+*/
+body { padding-bottom: 55px; padding-top: 35px; }
+.itemIcon { border-radius: 10px 5px; border: 2px solid #701221; }
+a img:hover {
+	-webkit-filter: grayscale(100%) sepia(1) hue-rotate(305deg) saturate(5);
+	filter: grayscale(100%) sepia(1) hue-rotate(305deg) saturate(5);
+}
+/* ---- Resume ---- */
+.resumeArea { background-color: #FFFFFF; color: #000000; padding: 15px; margin: 5px; font-family: "franklin-gothic-urw", sans-serif; }
+.resumeArea h1, .resumeArea h2, .resumeArea h3, .resumeArea h4, .resumeArea h5, .resumeArea h6 { font-family: "franklin-gothic-urw", sans-serif; text-shadow: none;}
+.resumeArea h4 { font-weight: bold; }
+.resumeArea h4:not(.no-transform) { text-transform: uppercase; }
+.resumeArea a { color: #880000; }
+ul.runningList { margin: 0; padding: 0; display: initial; }
+ul.runningList li { margin: 0; padding: 0 0.25em 0 0; }
+ul.runningList li:after { content: ", "; }
+ul.runningList li:last-child:before { content: " and "; }
+ul.runningList li:last-child:after { content: ""; }
+/* ---- Games ---- */
+.flashAlt { text-align: left; }
+/*
+#disqus_thread { padding: 0 30px 0 30px; margin: 55px 0 -45px 0; }
+*/
+/* ---- Contact ---- */
+.has-success .input-group-addon { background-image: linear-gradient(#65924d,#5c7f48 60%,#557245); }
+.has-error .input-group-addon { background-image: linear-gradient(#a72a2c,#8e2a2f 60%,#7c2c2e); }
+.carousel-caption h3 {
+	text-shadow: 4px 4px 8px #00000048, 4px -4px 8px #00000048, -4px 4px 8px #00000048, -4px -4px 8px #00000048, 4px 0px 8px #00000048, 0px 4px 8px #00000048, -4px 0px 8px #00000048, 0px -4px 8px #00000048;
+}
+/* ---- Main Page ---- */
+.panic-nova h3 img { height: 72px; }
+.panic-nova .media {
+	border: 1px solid #5f0f1c;
+	background-color: #00000020;
+	border-radius: 0.8em;
+	max-width: 550px;
+}
+.panic-nova .media img.media-object { width: 72px; margin: 1em; }
+.panic-nova .media h1 { font-size: 1.5em; }
+.panic-nova .media .media-heading { margin: 0.25em 0 0.5em 0; }
+.panic-nova .media .media-body { margin-right: 0.25em; }
+
+
+/* ---- New Style ---- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* padding-bottom: 0; */
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-top: 1px solid #701221;
+	z-index: 10; /* Resume causes overwriting? */
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: #ffffff;
+	background-color: #000000;
+	border-top: 1px solid #701221;
+}
+.footer p { padding: 14px 0 7px 0; }
+
+.carousel-control {
+	font-size: 3em;
+	font-weight: bolder;
+	color: #ffffff;
+	text-align: center;
+	line-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
