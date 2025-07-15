@@ -136,7 +136,7 @@ $workExperienceItems = array(
 			"<a href='https://www.killersnails.com/products/venom-colab' target='_blank'>BioDive</a> (Android/iOS/WebGL), " .
 			"<a href='https://www.killersnails.com/products/scuba-adventure-philippines' target='_blank'>Scuba Adventure: Phillipines</a> (Android/iOS), " .
 			"<a href='https://www.killersnails.com/products/waterways-complete' target='_blank'>WaterWays</a> (Android/iOS/WebGL), " .
-			"<a href='https://www.killersnails.com/products/venom-colab' target='_blank'>Venom CoLab</a>Venom CoLab (WebGL)",
+			"<a href='https://www.killersnails.com/products/venom-colab' target='_blank'>Venom CoLab</a> (WebGL)",
 			"<a href='https://patents.google.com/patent/US11763691B1/en' target='_blank'>U.S. Patent 11763691</a>, <i>&quot;Method and learning system platform for extended reality digital hybrid education&quot;</i>, Sep 2023"
 		)
 	),
